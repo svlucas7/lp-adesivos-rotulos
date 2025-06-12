@@ -1,0 +1,1290 @@
+/* Zap Gráfica - Custom Styles Optimized - VERDE PRINCIPAL */
+:root {
+    /* Paleta de Cores Principal - VERDE FOCO */
+    --zap-green: #00d355;
+    --zap-green-dark: #00b84a;
+    --zap-green-light: #00ff66;
+    --zap-blue: #00AEff; /* Apenas para detalhes específicos */
+    
+    /* Fundos Neutros */
+    --bg-light: #ffffff;
+    --bg-neutral: #f8fafc;
+    --bg-dark: #1f2937;
+    
+    /* Texto */
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --text-light: #9ca3af;
+      /* Gradientes Focados no Verde */
+    --gradient-primary: #00d355; /* Verde sólido como base */
+    --gradient-hero: #00d355; /* Verde sólido para hero */
+    --gradient-hover: linear-gradient(135deg, #00b84a 0%, #00d355 100%);
+    --gradient-detail: linear-gradient(135deg, #00d355 80%, #00AEff 20%); /* Azul só em detalhes */
+    
+    /* Sombras Consistentes - Foco Verde */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --shadow-green: 0 4px 16px rgba(0, 211, 85, 0.25);
+    --shadow-blue: 0 4px 16px rgba(0, 174, 255, 0.15); /* Azul mais sutil */
+    
+    /* Transições Padrão */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset e Base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+    line-height: 1.7;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Performance - Estabilização de Layout */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Utilitários de Cor */
+.text-zap-green {
+    color: var(--zap-green) !important;
+    font-weight: 700;
+}
+
+.text-zap-blue {
+    color: var(--zap-blue) !important;
+    font-weight: 700;
+}
+
+.bg-gradient-primary {
+    background: var(--gradient-primary);
+}
+
+/* Fundos das Seções */
+.section-white {
+    background-color: var(--bg-light);
+}
+
+.section-neutral {
+    background-color: var(--bg-neutral);
+    position: relative;
+}
+
+.section-neutral::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
+/* Hero Section com Padrão Geométrico Elegante */
+.hero-gradient {
+    background: var(--gradient-hero);
+    background-image: 
+        linear-gradient(30deg, rgba(255,255,255,0.1) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.1) 87.5%),
+        linear-gradient(150deg, rgba(255,255,255,0.1) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.1) 87.5%);
+    background-size: 60px 60px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.04) 0%, transparent 50%);
+    animation: float 20s ease-in-out infinite;
+}
+
+/* Seção Hero Principal (classe usada no HTML) */
+.hero-section {
+    background: var(--gradient-hero);
+    background-image: 
+        linear-gradient(30deg, rgba(255,255,255,0.1) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.1) 87.5%),
+        linear-gradient(150deg, rgba(255,255,255,0.1) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.1) 87.5%);
+    background-size: 60px 60px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(255,255,255,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255,255,255,0.04) 0%, transparent 50%);
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-10px, -10px); }
+}
+
+/* Botões Otimizados - Verde Puro */
+.btn-zap-primary {
+    background: var(--zap-green);
+    background-image: 
+        linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%),
+        linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%);
+    background-size: 20px 20px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 50px;
+    transition: var(--transition-slow);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-zap-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.6s;
+}
+
+.btn-zap-primary:hover {
+    background: var(--zap-green-dark);
+    background-image: 
+        linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 75%),
+        linear-gradient(-45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 75%);
+    background-size: 20px 20px;
+    color: white;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: var(--shadow-lg);
+    text-decoration: none;
+}
+
+.btn-zap-primary:hover::before {
+    left: 100%;
+}
+
+/* Cards Premium */
+.card-premium {
+    border: none;
+    border-radius: 25px;
+    padding: 45px 35px;
+    text-align: center;
+    transition: var(--transition-slow);
+    box-shadow: var(--shadow-sm);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    cursor: pointer;
+}
+
+.card-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.card-premium:hover {
+    transform: translateY(-20px) scale(1.04);
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--zap-green);
+}
+
+.card-premium:hover::before {
+    opacity: 0.02;
+}
+
+/* Ícones Circulares com Verde Elegante */
+.icon-circle-premium {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    background: var(--zap-green);
+    background-image: 
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(255,255,255,0.1) 0%, transparent 30%);
+    color: white;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-normal);
+}
+
+.icon-circle-premium::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+    transform: rotate(45deg);
+    transition: transform 0.8s ease;
+}
+
+.icon-circle-premium:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.icon-circle-premium:hover::before {
+    transform: rotate(45deg) translate(100%, 100%);
+}
+
+/* Responsividade Melhorada */
+@media (max-width: 992px) {
+    .card-premium {
+        padding: 35px 25px;
+        margin-bottom: 30px;
+    }
+    
+    .icon-circle-premium {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-premium {
+        padding: 30px 20px;
+        margin-bottom: 25px;
+    }
+    
+    .btn-zap-primary {
+        padding: 12px 25px;
+        font-size: 0.85rem;
+    }
+    
+    .icon-circle-premium {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+/* Animações de Scroll */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Loading States */
+.loading {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.loaded {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease;
+}
+
+/* Container responsivo */
+.container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+@media (max-width: 768px) {
+    .container { padding: 0 1rem; }
+}
+
+/* Cartões responsivos e modernos */
+.card-clean {
+    background: var(--bg-light);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: var(--shadow-sm);
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-clean:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: var(--shadow-md);
+    border-color: var(--zap-green);
+}
+
+/* Botões principais com Verde Elegante */
+.btn-cta {
+    background: var(--zap-green);
+    background-image: 
+        linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%),
+        linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%);
+    background-size: 20px 20px;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: var(--shadow-green);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.btn-cta:hover {
+    background: var(--gradient-hover); /* Mudado para gradiente verde */
+    color: #fff;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.btn-product-green, .btn-product-blue {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    box-shadow: var(--shadow-sm);
+    border: none;
+    margin-top: 0.5rem;
+    background: var(--zap-green); /* Verde sólido elegante */
+    background-image: 
+        linear-gradient(135deg, rgba(255,255,255,0.1) 25%, transparent 25%);
+    background-size: 8px 8px;
+    color: white;
+}
+.btn-product-green:hover, .btn-product-blue:hover {
+    background: var(--zap-green-dark); /* Hover verde escuro */
+    background-image: 
+        linear-gradient(135deg, rgba(255,255,255,0.15) 25%, transparent 25%);
+    background-size: 8px 8px;
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px) scale(1.03);
+    color: white;
+}
+
+/* Classe especial para detalhes com azul sutil - uso limitado */
+.accent-detail {
+    border-left: 3px solid var(--zap-blue);
+    padding-left: 1rem;
+}
+
+.badge-detail {
+    background: var(--gradient-detail); /* 80% verde, 20% azul */
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer-bg {
+    background: #181e24;
+}
+.footer-logo {
+    height: 40px;
+    width: auto;
+}
+.footer-link {
+    color: #b0b8c1;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-link:hover {
+    color: var(--zap-green);
+}
+.footer-social a {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.footer-social a:hover {
+    opacity: 1;
+}
+
+/* WhatsApp flutuante */
+.whatsapp-btn {
+    background-color: var(--zap-green);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 50;
+}
+.whatsapp-btn:hover {
+    background-color: #00b84a;
+    transform: scale(1.1);
+}
+
+/* Ajustes de tipografia e espaçamento */
+h1, h2, h3, h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.text-brand {
+    color: var(--zap-green);
+    font-weight: 700;
+}
+
+/* Responsividade para grid de produtos e seções */
+@media (max-width: 1024px) {
+    .grid.md\:grid-cols-3 { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 768px) {
+    .grid.md\:grid-cols-3, .grid.md\:grid-cols-2, .grid.md\:grid-cols-4 {
+        grid-template-columns: 1fr !important;
+    }
+    .py-16 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+    .py-20 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+}
+
+/* Scrollbar limpa */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-neutral);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--zap-green);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00b84a;
+}
+
+/* Estilo da seção CTA para garantir legibilidade */
+.cta-section .cta-title {
+  color: #FDB92E !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+  filter: none !important;
+}
+
+/* --- Ajuste específico para botões do carrossel de depoimentos --- */
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  right: 12px;
+  margin: 0;
+  z-index: 2;
+  /* Remove qualquer overflow/corte */
+  overflow: visible;
+  box-sizing: content-box;
+}
+#testimonialCarousel .carousel-control-prev {
+  left: 12px;
+  right: auto;
+}
+#testimonialCarousel .carousel-control-next {
+  right: 12px;
+  left: auto;
+}
+@media (max-width: 600px) {
+  #testimonialCarousel .carousel-control-prev {
+    left: 2px;
+  }
+  #testimonialCarousel .carousel-control-next {
+    right: 2px;
+  }
+  #testimonialCarousel .carousel-control-prev,
+  #testimonialCarousel .carousel-control-next {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+  }
+}
+/* Garante que o ícone não fique cortado */
+#testimonialCarousel .carousel-control-prev-icon,
+#testimonialCarousel .carousel-control-next-icon {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  min-height: 22px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  overflow: visible;
+}
+
+/* --- Depoimentos Premium --- */
+.testimonial-card-premium {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 20px;
+  box-shadow: 
+    0 12px 40px rgba(0,0,0,0.08),
+    0 4px 16px rgba(0,0,0,0.04);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  height: 320px;
+  min-height: 320px;
+  max-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(253,185,46,0.1);
+  backdrop-filter: blur(10px);
+}
+.testimonial-card-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    rgba(253,185,46,0.2) 20%, 
+    rgba(255,255,255,0.5) 50%, 
+    rgba(253,185,46,0.2) 80%, 
+    transparent
+  );
+  transition: left 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+}
+.testimonial-card-premium:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 
+    0 28px 90px rgba(253,185,46,0.2),
+    0 12px 40px rgba(0,0,0,0.15);
+  border-color: rgba(253,185,46,0.4);
+}
+.testimonial-card-premium:hover::before {
+  left: 100%;
+}
+.testimonial-quote {
+  font-size: 5rem;
+  color: var(--accent);
+  opacity: 0.15;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+.testimonial-card-premium:hover .testimonial-quote {
+  opacity: 0.25;
+  transform: scale(1.1);
+}
+.testimonial-stars {
+  position: relative;
+  z-index: 2;
+  color: var(--accent);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 2px 6px rgba(253,185,46,0.4));
+  transition: all 0.3s ease;
+}
+.testimonial-card-premium:hover .testimonial-stars {
+  animation: starGlow 1.5s ease-in-out infinite;
+}
+@keyframes starGlow {
+  0%, 100% { 
+    transform: scale(1);
+    filter: drop-shadow(0 2px 6px rgba(253,185,46,0.4));
+  }
+  50% { 
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 12px rgba(253,185,46,0.6));
+  }
+}
+.testimonial-text {
+  position: relative;
+  z-index: 2;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-weight: 500;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.testimonial-author {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.author-avatar {
+  color: var(--accent);
+  font-size: 2.5rem;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.testimonial-card-premium:hover .author-avatar {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.author-info {
+  text-align: left;
+}
+.author-name {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  transition: color 0.3s ease;
+}
+.author-company {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 0.1rem;
+}
+.author-location {
+  color: #6b7280;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-style: italic;
+}
+.testimonial-control {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(253,185,46,0.95) 0%, rgba(253,185,46,1) 100%);
+  backdrop-filter: blur(20px);
+  border: 3px solid rgba(255,255,255,0.4);
+  box-shadow: 
+    0 12px 40px rgba(253,185,46,0.4),
+    inset 0 2px 0 rgba(255,255,255,0.5);
+  color: var(--primary);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-control:hover {
+  background: linear-gradient(135deg, var(--accent) 0%, #e6a532 100%);
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 
+    0 16px 50px rgba(253,185,46,0.6),
+    inset 0 2px 0 rgba(255,255,255,0.6);
+  border-color: rgba(255,255,255,0.6);
+}
+.testimonial-control i {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.testimonial-indicators {
+  bottom: -60px;
+  gap: 15px;
+  justify-content: center;
+}
+.testimonial-indicators button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(253,185,46,0.3);
+  border: 3px solid rgba(253,185,46,0.5);
+  margin: 0;
+  opacity: 1;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-indicators button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: var(--accent);
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translate(-50%, -50%);
+}
+.testimonial-indicators button.active {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.4);
+  box-shadow: 
+    0 6px 20px rgba(253,185,46,0.5),
+    0 0 0 6px rgba(253,185,46,0.2);
+}
+.testimonial-indicators button.active::before {
+  width: 8px;
+  height: 8px;
+  background: rgba(255,255,255,0.9);
+}
+.testimonials-cta {
+  background: linear-gradient(135deg, rgba(253,185,46,0.1) 0%, rgba(0,211,85,0.05) 100%);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  border: 2px solid rgba(253,185,46,0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+.testimonials-cta:hover {
+  border-color: rgba(253,185,46,0.4);
+  background: linear-gradient(135deg, rgba(253,185,46,0.15) 0%, rgba(0,211,85,0.08) 100%);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   CTA DEPOIMENTOS APRIMORADO
+   ============================================ */
+
+/* CTA Base Aprimorado */
+.testimonials-cta.enhanced {
+  background: linear-gradient(135deg, 
+    rgba(253,185,46,0.08) 0%, 
+    rgba(0,211,85,0.06) 50%,
+    rgba(253,185,46,0.04) 100%);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  border: 2px solid rgba(253,185,46,0.15);
+  backdrop-filter: blur(15px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-cta.enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(253,185,46,0.1), 
+    transparent);
+  transition: left 0.6s ease;
+}
+
+.testimonials-cta.enhanced:hover::before {
+  left: 100%;
+}
+
+.testimonials-cta.enhanced:hover {
+  border-color: rgba(253,185,46,0.3);
+  background: linear-gradient(135deg, 
+    rgba(253,185,46,0.12) 0%, 
+    rgba(0,211,85,0.08) 50%,
+    rgba(253,185,46,0.06) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(253,185,46,0.2);
+}
+
+/* Selo de Líder de Mercado */
+.market-leader-badge {
+  background: linear-gradient(90deg, #fbbf24 0%, #fde68a 100%);
+  color: #92400e;
+  font-weight: 800;
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 0.5rem 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(253,185,46,0.13);
+  letter-spacing: 0.5px;
+}
+
+/* Subtítulo emocional CTA */
+.cta-subtitle {
+  color: #374151;
+  font-size: 1.13rem;
+  font-weight: 500;
+  max-width: 650px;
+  margin: 0 auto 1.2rem auto;
+  line-height: 1.6;
+}
+
+/* Badge de aprovação */
+.proof-item .proof-number {
+  color: #059669;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.proof-item .proof-text {
+  color: #374151;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+/* Badge de escassez no botão */
+.btn-badge {
+  background: #ef4444;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 12px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+  margin-left: 0.7rem;
+  animation: bounce 2s infinite;
+  box-shadow: 0 2px 8px rgba(239,68,68,0.13);
+}
+
+@media (max-width: 768px) {
+  .market-leader-badge {
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+  }
+  .cta-subtitle {
+    font-size: 1.01rem;
+    padding: 0 0.5rem;
+  }
+}
+
+/* --- SOLUÇÃO DEFINITIVA - Corrige sobreposição no carrossel de depoimentos - OTIMIZADA --- */
+
+/* Força ocultar todos os slides não ativos - Performance otimizada */
+#testimonialCarousel .carousel-item {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  z-index: -999 !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+/* Força mostrar apenas o slide ativo - Carregamento instantâneo */
+#testimonialCarousel .carousel-item.active {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1 !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+/* Remove qualquer estado de transição conflitante */
+#testimonialCarousel .carousel-item.carousel-item-start,
+#testimonialCarousel .carousel-item.carousel-item-end,
+#testimonialCarousel .carousel-item.carousel-item-next,
+#testimonialCarousel .carousel-item.carousel-item-prev {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+/* CSS específico para cards premium - carregamento instantâneo */
+.testimonial-card-premium {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important; /* Apenas hover effects */
+}
+
+/* Animação muito rápida apenas para o slide ativo */
+#testimonialCarousel .carousel-item.active .testimonial-card-premium {
+  animation: testimonialSlideIn 0.2s ease-out forwards; /* Ainda mais rápido */
+}
+
+@keyframes testimonialSlideIn {
+  0% {
+    opacity: 0.9;
+    transform: translateY(5px); /* Movimento mínimo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Remove completamente todos os delays */
+.testimonial-card-premium:nth-child(1),
+.testimonial-card-premium:nth-child(2),
+.testimonial-card-premium:nth-child(3) {
+  animation-delay: 0s !important;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card-premium {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    padding: 2rem 1.5rem;
+  }
+  .testimonial-quote {
+    font-size: 4rem;
+    top: 10px;
+    left: 15px;
+  }
+  .testimonial-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .testimonial-control {
+    width: 45px;
+    height: 45px;
+  }
+  .testimonial-control i {
+    font-size: 1rem;
+  }
+  .testimonials-cta {
+    padding: 2rem 1.5rem;
+  }
+  .author-avatar {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .testimonial-card-premium {
+    height: 280px;
+    min-height: 280px;
+    max-height: 280px;
+    padding: 1.8rem 1.3rem;
+  }
+  .testimonial-stars {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .testimonial-text {
+    font-size: 1rem;
+  }
+  .author-info {
+    text-align: center;
+  }
+}
+.testimonial-card-premium {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  animation: testimonialFadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0.3s forwards;
+}
+@keyframes testimonialFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.testimonial-control:focus-visible {
+  outline: 3px solid rgba(253,185,46,0.6);
+  outline-offset: 2px;
+}
+.testimonial-indicators button:focus-visible {
+  outline: 2px solid rgba(253,185,46,0.8);
+  outline-offset: 2px;
+}
+
+/* === PROTEÇÃO EXTRA CONTRA SOBREPOSIÇÃO DE TEXTOS === */
+
+/* Garante que apenas slides ativos sejam visíveis */
+#testimonialCarousel .carousel-inner {
+  position: relative !important;
+  overflow: hidden !important;
+  height: auto !important;
+  min-height: 400px !important;
+}
+
+/* Remove qualquer position absolute dos slides */
+#testimonialCarousel .carousel-item {
+  position: static !important;
+  left: 0 !important;
+  transform: none !important;
+}
+
+/* Esconde completamente slides inativos */
+#testimonialCarousel .carousel-item:not(.active) {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  z-index: -999 !important;
+}
+
+/* Mostra apenas o slide ativo */
+#testimonialCarousel .carousel-item.active {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1 !important;
+}
+
+/* Remove transições que podem causar conflitos */
+#testimonialCarousel .carousel-item {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+/* Remove transformações do Bootstrap que podem causar sobreposição */
+#testimonialCarousel .carousel-item.carousel-item-start,
+#testimonialCarousel .carousel-item.carousel-item-end,
+#testimonialCarousel .carousel-item.carousel-item-next,
+#testimonialCarousel .carousel-item.carousel-item-prev {
+  transform: none !important;
+  display: none !important;
+}
+
+/* Garante que os cards não flutuem */
+#testimonialCarousel .testimonial-card-premium {
+  position: relative !important;
+  float: none !important;
+  clear: both !important;
+  z-index: 2 !important;
+}
+
+/* Mobile specific fixes */
+@media (max-width: 768px) {
+  #testimonialCarousel .carousel-inner {
+    min-height: 350px !important;
+  }
+  
+  /* Força apenas um card por vez no mobile */
+  #testimonialCarousel .carousel-item .col-12 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+}
+
+/* Debug mode - remove em produção */
+/*
+#testimonialCarousel .carousel-item {
+  border: 2px solid red !important;
+}
+#testimonialCarousel .carousel-item.active {
+  border: 2px solid green !important;
+}
+*/
+
+/* CTA Minimalista - Depoimentos */
+.minimal-cta {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+  padding: 2.2rem 1.2rem 2.5rem 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1.5px solid #f3f4f6;
+}
+
+.market-leader-badge.minimal-badge {
+  background: #f3f4f6;
+  color: #b45309;
+  font-size: 0.98rem;
+  font-weight: 700;
+  border-radius: 18px;
+  padding: 0.35rem 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: none;
+}
+
+.urgency-badge-minimal {
+  background: #fef3c7;
+  color: #b45309;
+  font-size: 0.97rem;
+  font-weight: 600;
+  border-radius: 18px;
+  padding: 0.32rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: none;
+}
+
+.benefit-item.minimal-benefit {
+  background: #f3f4f6;
+  color: #059669;
+  font-size: 0.97rem;
+  font-weight: 600;
+  border-radius: 16px;
+  padding: 0.38rem 1.1rem;
+  border: none;
+  margin-bottom: 0.2rem;
+}
+
+.btn-zap-minimal {
+  background: linear-gradient(90deg, #25d366 0%, #128c7e 100%);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.13rem;
+  border-radius: 14px;
+  padding: 1.1rem 2.2rem;
+  box-shadow: 0 4px 18px rgba(37,211,102,0.13);
+  border: none;
+  transition: all 0.2s;
+  letter-spacing: 0.01em;
+}
+.btn-zap-minimal:hover, .btn-zap-minimal:focus {
+  background: linear-gradient(90deg, #128c7e 0%, #25d366 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(37,211,102,0.18);
+}
+
+.minimal-testimonial {
+  background: #f9fafb;
+  border-radius: 14px;
+  border: 1px solid #f3f4f6;
+  padding: 1.2rem 1.3rem 1.1rem 1.3rem;
+  max-width: 420px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+@media (max-width: 600px) {
+  .minimal-cta {
+    padding: 1.2rem 0.3rem 1.5rem 0.3rem;
+  }
+  .minimal-testimonial {
+    padding: 1rem 0.7rem 0.9rem 0.7rem;
+  }
+}
+
+/* --- Sustentabilidade Section --- */
+.sustainability-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.sustainability-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(34, 197, 94, 0.1);
+}
+
+.sustainability-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+  border-color: rgba(34, 197, 94, 0.2);
+}
+
+.sustainability-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  border: 3px solid rgba(34, 197, 94, 0.1);
+}
+
+.sustainability-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.sustainability-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.fsc-badge {
+  animation: subtle-pulse 3s ease-in-out infinite;
+}
+
+@keyframes subtle-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+@media (max-width: 768px) {
+  .sustainability-section {
+    padding: 3rem 0;
+  }
+  
+  .sustainability-card {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sustainability-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+}

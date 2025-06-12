@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zap Gráfica - Adesivos, Etiquetas e Rótulos Personalizados | Qualidade Premium</title>
+    <meta name="description" content="✅ Adesivos, etiquetas e rótulos personalizados de alta qualidade ✅ Arte Online Gratuita ✅ Entrega Rápida em todo Brasil ✅ Margem real para revenda">
+    <meta name="keywords" content="adesivos personalizados, etiquetas, rótulos, gráfica BH, adesivo casca de ovo, DTF, vinil, personalização">
+    <meta name="author" content="Zap Gráfica">
+    <link rel="canonical" href="https://zapgrafica.com.br">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Zap Gráfica - Adesivos e Etiquetas Personalizados">
+    <meta property="og:description" content="Adesivos, etiquetas e rótulos de alta qualidade com arte online gratuita e entrega rápida.">
+    <meta property="og:image" content="https://zapgrafica.com.br/assets/images/LOGO VERDE FUNDO TRANSPARENTE.png">
+    <meta property="og:url" content="https://zapgrafica.com.br">
+    
+    <!-- Preconnect para Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/LOGO VERDE FUNDO TRANSPARENTE.png">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      <style>
+        :root {
+            --zap-green: #00d355;
+            --zap-blue: #00AEff;
+            --gradient-primary: linear-gradient(135deg, #00d355 70%, #00AEff 30%);
+            --gradient-hover: linear-gradient(135deg, #00b84a 70%, #0099e6 30%);
+            --shadow-sm: 0 2px 10px rgba(0,0,0,0.1);
+            --shadow-md: 0 8px 30px rgba(0,0,0,0.15);
+            --shadow-lg: 0 15px 40px rgba(0,0,0,0.2);
+        }
+          * {
+            box-sizing: border-box;
+        }
+        
+        /* Performance e estabilização de layout */
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            overflow-x: hidden;
+            font-display: swap;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Otimização de imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .navbar-brand img, .footer-logo {
+            aspect-ratio: auto;
+        }
+        
+        /* Navbar melhorado */
+        .navbar {
+            padding: 1rem 0;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+        }
+        
+        /* Hero section melhorado */
+        .hero-section {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 120px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Botões aprimorados */
+        .btn-zap {
+            background: var(--gradient-primary);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 14px 35px;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-zap::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-zap:hover::before {
+            left: 100%;
+        }
+        
+        .btn-zap:hover {
+            background: var(--gradient-hover);
+            color: white;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-green {
+            background: var(--zap-green);
+            border: none;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-green:hover {
+            background: #00b84a;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .btn-blue {
+            background: var(--zap-blue);
+            border: none;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-blue:hover {
+            background: #0099e6;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .text-zap-green {
+            color: var(--zap-green) !important;
+        }
+        
+        .text-zap-blue {
+            color: var(--zap-blue) !important;
+        }
+        
+        .card-product {
+            border: none;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            height: 100%;
+        }
+        
+        .card-product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            background: var(--gradient-primary);
+            color: white;
+        }
+        
+        .bg-light-gray {
+            background-color: #f8f9fa;
+        }
+        
+        .footer-dark {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        
+        .footer-logo {
+            height: 40px;
+            width: auto;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--zap-green);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background: #00b84a;
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            .section-padding {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/images/LOGO VERDE FUNDO TRANSPARENTE.png" alt="Zap Gráfica Logo" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <a href="#contato" class="btn btn-zap">
+                    <i class="fab fa-whatsapp me-2"></i>Fale com a Zap
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Adesivos, Etiquetas e Rótulos<br>
+                        <span class="bg-dark bg-opacity-25 px-3 py-1 rounded">Personalizados</span>
+                    </h1>                    <p class="lead mb-5 fs-4" style="color: rgba(255,255,255,0.95) !important;">
+                        Destaque sua marca em cada detalhe com produtos gráficos de alta qualidade, versatilidade e custo-benefício real.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                        <a href="#produtos" class="btn btn-light btn-lg px-4">
+                            <i class="fas fa-eye me-2 text-zap-green"></i>Ver Produtos
+                        </a>
+                        <a href="#contato" class="btn btn-zap btn-lg px-4">
+                            <i class="fab fa-whatsapp me-2"></i>Falar com Especialista
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">
+                        Por que escolher a <span class="text-zap-green">Zap Gráfica</span>?
+                    </h2>
+                    <p class="lead text-muted">
+                        Soluções completas em produtos gráficos para quem busca qualidade, variedade e custo-benefício real.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-product">
+                        <i class="fas fa-award text-zap-green mb-3" style="font-size: 3rem;"></i>
+                        <h4 class="fw-bold mb-3">Qualidade Impecável</h4>
+                        <p class="text-muted">Impressão de alta qualidade com materiais resistentes e duráveis.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-product">
+                        <i class="fas fa-palette text-zap-blue mb-3" style="font-size: 3rem;"></i>
+                        <h4 class="fw-bold mb-3">Versatilidade Total</h4>
+                        <p class="text-muted">Produtos ideais para comércio, alimentos, eventos, logística e personalização.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-product">
+                        <i class="fas fa-dollar-sign text-zap-green mb-3" style="font-size: 3rem;"></i>
+                        <h4 class="fw-bold mb-3">Margem Real para Revenda</h4>
+                        <p class="text-muted">Opções ideais para revendedores com custo-benefício real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">
+                        Nossos <span class="text-zap-green">Produtos</span>
+                    </h2>
+                    <p class="lead text-muted">
+                        Linha completa de adesivos, etiquetas e rótulos para todas as necessidades.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product bg-white">
+                        <i class="fas fa-shield-alt text-zap-green mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mb-3">Adesivo Casca de Ovo</h5>
+                        <p class="text-muted mb-4">Ideal para lacrar produtos e embalagens com segurança. Dificulta a remoção e protege contra violações.</p>
+                        <a href="#" class="btn btn-green w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product bg-white">
+                        <i class="fas fa-map-marker-alt text-zap-blue mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mb-3">Adesivo de Piso</h5>
+                        <p class="text-muted mb-4">Impressos em vinil branco com alta qualidade, ideais para sinalização em ambientes internos e eventos.</p>
+                        <a href="#" class="btn btn-blue w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product bg-white">
+                        <i class="fas fa-tshirt text-zap-green mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mb-3">Adesivo DTF Têxtil</h5>
+                        <p class="text-muted mb-4">Ideal para personalizar roupas e acessórios com cores vibrantes e alta durabilidade.</p>
+                        <a href="#" class="btn btn-green w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product bg-white">
+                        <i class="fas fa-sun text-zap-blue mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mb-3">Adesivo DTF UV</h5>
+                        <p class="text-muted mb-4">Perfeito para divulgar marcas com alta definição. Aplicável em diversas superfícies com ótima resistência.</p>
+                        <a href="#" class="btn btn-blue w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product bg-white">
+                        <i class="fas fa-cube text-zap-green mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mb-3">Adesivo Resinado</h5>
+                        <p class="text-muted mb-4">Ideal para etiquetas com efeito 3D e personalização de tanques de moto com acabamento profissional.</p>
+                        <a href="#" class="btn btn-green w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product bg-white">
+                        <i class="fas fa-fire text-zap-blue mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mb-3">Adesivo Termocolante</h5>
+                        <p class="text-muted mb-4">Perfeito para personalizar roupas e uniformes. Aplicado com calor, garante fixação resistente.</p>
+                        <a href="#" class="btn btn-blue w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product bg-white">
+                        <i class="fas fa-star text-zap-green mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mb-3">Etiquetas Corte Especial</h5>
+                        <p class="text-muted mb-4">Formatos diferenciados e recorte criativo, ideais para valorizar embalagens e produtos.</p>
+                        <a href="#" class="btn btn-green w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product bg-white">
+                        <i class="fas fa-tag text-zap-blue mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mb-3">Etiquetas Padrão</h5>
+                        <p class="text-muted mb-4">Soluções versáteis para identificação e organização. Perfeitas para uso logístico e comercial.</p>
+                        <a href="#" class="btn btn-blue w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product bg-white">
+                        <i class="fas fa-snowflake text-zap-green mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mb-3">Rótulo para Frios e Congelados</h5>
+                        <p class="text-muted mb-4">Ideal para alimentos refrigerados. Resistente à umidade e baixas temperaturas.</p>
+                        <a href="#" class="btn btn-green w-100">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arte Online Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="icon-circle mx-auto mb-4">
+                        <i class="fas fa-paint-brush" style="font-size: 2rem;"></i>
+                    </div>
+                    <h2 class="display-5 fw-bold mb-4">
+                        Serviço de <span class="text-zap-green">Arte Online</span>
+                    </h2>
+                    <p class="lead mb-5">
+                        <strong>Você vende, a gente cria!</strong> Não se preocupe com o desenvolvimento das artes - nós cuidamos de tudo!
+                    </p>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-4">
+                            <div class="card-product">
+                                <i class="fas fa-globe text-zap-green mb-3" style="font-size: 2.5rem;"></i>
+                                <h5 class="fw-bold mb-2">Atendimento Online</h5>
+                                <p class="text-muted small">Ser atendido de qualquer lugar via Google Meet</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-product">
+                                <i class="fas fa-users text-zap-blue mb-3" style="font-size: 2.5rem;"></i>
+                                <h5 class="fw-bold mb-2">Equipe Especializada</h5>
+                                <p class="text-muted small">Materiais criados por nossa equipe profissional</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-product">
+                                <i class="fas fa-check-circle text-zap-green mb-3" style="font-size: 2.5rem;"></i>
+                                <h5 class="fw-bold mb-2">Zero Erros</h5>
+                                <p class="text-muted small">Garantimos materiais 100% alinhados sem erros</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contato" class="btn btn-zap btn-lg px-5">
+                        <i class="fas fa-brush me-2"></i>Contratar Arte Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entrega Section -->
+    <section class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">
+                        <i class="fas fa-shipping-fast text-zap-green me-3"></i>
+                        Entregamos em <span class="text-zap-green">Qualquer Lugar</span>
+                    </h2>
+                    <p class="lead text-muted">
+                        Não importa onde ou quando você deseja receber, a Zap entrega!
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-product bg-white">
+                        <div class="icon-circle mx-auto mb-3">
+                            <i class="fas fa-store" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Base de Retirada</h5>
+                        <p class="text-muted mb-3">Rapidez total. Faça o pedido e retire diretamente em nossas bases.</p>
+                        <div class="d-flex align-items-center justify-content-center text-zap-green fw-bold">
+                            <i class="fas fa-clock me-2"></i>
+                            <span>Imediato</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-product bg-white">
+                        <div class="icon-circle mx-auto mb-3">
+                            <i class="fas fa-building" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Balcão BH</h5>
+                        <p class="text-muted mb-3">Nossa loja em BH com fácil acesso, rapidez e flexibilidade.</p>
+                        <div class="d-flex align-items-center justify-content-center text-zap-green fw-bold">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <span>Belo Horizonte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-product bg-white">
+                        <div class="icon-circle mx-auto mb-3">
+                            <i class="fas fa-box" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Sedex</h5>
+                        <p class="text-muted mb-3">Entrega rápida e segura para todo o Brasil via Correios.</p>
+                        <div class="d-flex align-items-center justify-content-center text-zap-green fw-bold">
+                            <i class="fas fa-truck me-2"></i>
+                            <span>Todo Brasil</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-product bg-white">
+                        <div class="icon-circle mx-auto mb-3">
+                            <i class="fas fa-motorcycle" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Motoboy</h5>
+                        <p class="text-muted mb-3">Entrega no mesmo dia para pedidos urgentes e locais.</p>
+                        <div class="d-flex align-items-center justify-content-center text-zap-green fw-bold">
+                            <i class="fas fa-bolt me-2"></i>
+                            <span>Mesmo dia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="contato" class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4 fw-bold mb-4">
+                        Pronto para <span class="bg-dark bg-opacity-25 px-3 py-1 rounded">Elevar Suas Vendas</span>?
+                    </h2>                    <p class="lead mb-5" style="color: rgba(255,255,255,0.95) !important;">
+                        Não perca a oportunidade de destacar sua marca com produtos gráficos de alta qualidade.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row gap-3 justify-content-center mb-5">
+                        <a href="#" class="btn btn-light btn-lg px-4">
+                            <i class="fas fa-globe me-2 text-zap-green"></i>Acessar o Site
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fab fa-whatsapp me-2"></i>QUERO FALAR COM A ZAP!
+                        </a>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="bg-white bg-opacity-25 rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-award" style="font-size: 2rem;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-2">Qualidade Garantida</h5>
+                                <p class="small opacity-75">Produtos com certificação de qualidade</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="bg-white bg-opacity-25 rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-clock" style="font-size: 2rem;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-2">Entrega Rápida</h5>
+                                <p class="small opacity-75">Prazos que cabem na sua urgência</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="bg-white bg-opacity-25 rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-handshake" style="font-size: 2rem;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-2">Atendimento Especializado</h5>
+                                <p class="small opacity-75">Equipe pronta para te ajudar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-dark py-5">
+        <div class="container">
+            <div class="row g-4">                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="assets/images/LOGO BRANCA FUNDO TRANSPARENTE.png" alt="Zap Gráfica Logo" class="footer-logo">
+                    </div>
+                    <p class="mb-4" style="color: #e9ecef !important; font-size: 1.1rem; line-height: 1.7;">
+                        Destaque sua marca em cada detalhe com produtos gráficos de alta qualidade, versatilidade e custo-benefício real.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-zap btn-sm rounded-circle" style="width: 50px; height: 50px;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-zap btn-sm rounded-circle" style="width: 50px; height: 50px;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-zap btn-sm rounded-circle" style="width: 50px; height: 50px;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-zap-green">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#produtos" class="text-muted text-decoration-none">Nossos Produtos</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Arte Online</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Formas de Entrega</a></li>
+                        <li class="mb-2"><a href="#contato" class="text-muted text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-zap-green">Contato</h5>
+                    <div class="mb-2">
+                        <i class="fas fa-phone text-zap-green me-2"></i>
+                        <span class="text-muted">(31) 9999-9999</span>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fas fa-envelope text-zap-blue me-2"></i>
+                        <span class="text-muted">contato@zapgrafica.com.br</span>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fas fa-map-marker-alt text-zap-green me-2"></i>
+                        <span class="text-muted">Belo Horizonte - MG</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center">
+                <p class="text-muted mb-0">© 2025 Zap Gráfica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="#" class="whatsapp-float" title="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Script personalizado -->
+    <script>
+        // Smooth scroll otimizado
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect otimizado com throttle
+        let ticking = false;
+        function updateNavbar() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow');
+            } else {
+                navbar.classList.remove('shadow');
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(updateNavbar);
+                ticking = true;
+            }
+        });
+
+        // Preload de imagens importantes
+        const criticalImages = [
+            'assets/images/LOGO VERDE FUNDO TRANSPARENTE.png',
+            'assets/images/LOGO BRANCA FUNDO TRANSPARENTE.png'
+        ];
+        
+        criticalImages.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        // Lazy loading para animações
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transition = 'transform 0.6s ease, opacity 0.6s ease';
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+        // Aplicar animações aos cards quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card-product');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

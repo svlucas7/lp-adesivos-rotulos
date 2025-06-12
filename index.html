@@ -1,0 +1,2322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zapack - Adesivos, Etiquetas e Rótulos Personalizados</title>
+  <meta name="description" content="Adesivos, etiquetas e rótulos personalizados de alta qualidade. Design profissional, entrega rápida e atendimento premium Zapack.">
+  
+  <!-- Meta Tags Sociais -->
+  <meta property="og:title" content="Zapack - Adesivos Personalizados de Alta Qualidade">
+  <meta property="og:description" content="Design profissional, entrega rápida e atendimento premium. Destaque sua marca com produtos gráficos profissionais.">
+  <meta property="og:image" content="assets/images/ZAPACK LOGO ORIGINAL.png">
+  <meta property="og:url" content="https://zapack.com.br">
+  <meta property="og:type" content="website">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zapack - Adesivos Personalizados">
+  <meta name="twitter:description" content="Design profissional, entrega rápida e atendimento premium para sua marca.">
+  
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Zapack",
+    "description": "Adesivos, etiquetas e rótulos personalizados de alta qualidade",
+    "url": "https://zapack.com.br",
+    "telephone": "+55-31-99999-9999",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Belo Horizonte",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Fr 08:00-18:00",
+    "priceRange": "$$"
+  }
+  </script>
+  
+  <link rel="icon" type="image/png" href="assets/images/ZAPACK LOGO ORIGINAL.png">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" as="style">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2D3B45;
+      --primary-dark: #1f2d35;
+      --primary-light: #3d4e58;
+      --accent: #FDB92E;
+      --accent-dark: #e6a426;
+      --bg-light: #f7f8fa;
+      --text: #2D3B45;
+      --radius: 18px;
+      --shadow: 0 6px 32px rgba(45,59,69,0.12);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg-light);
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background: #fff;
+      box-shadow: 0 6px 32px rgba(45,59,69,0.12);
+      padding: 0.8rem 0;
+    }
+    .navbar-brand img { height: 48px; width: auto; }
+    .nav-link { color: var(--primary); font-weight: 600; margin-right: 1.2rem; }
+    .nav-link.active, .nav-link:hover { color: var(--accent); }    .btn-main {
+      background: var(--accent);
+      color: var(--primary);
+      font-weight: 700;
+      border-radius: var(--radius);
+      padding: 0.9rem 2.2rem;
+      font-size: 1.1rem;
+      border: none;
+      box-shadow: 0 6px 20px rgba(253,185,46,0.15);
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-main:hover { background: var(--accent-dark); color: #fff; }
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 70%, var(--primary-light) 100%);
+      color: #fff;
+      padding: 80px 0 60px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-logo {
+      max-width: 180px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-title {
+      font-size: 2.7rem;
+      font-weight: 900;
+      margin-bottom: 1.2rem;
+      letter-spacing: -1px;
+    }
+    .hero-desc {
+      font-size: 1.25rem;
+      margin-bottom: 2.2rem;
+      color: #fff;
+      opacity: 0.92;
+    }
+    .hero .btn-main {
+      margin-bottom: 3.5rem;
+    }
+    .benefits {
+      background: linear-gradient(135deg, #fff 70%, #e9ecef 100%);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2.5rem 1.5rem;
+      margin-top: -30px;
+      margin-bottom: 2.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .benefit-icon {
+      color: var(--accent);
+      font-size: 2.2rem;
+      margin-bottom: 0.7rem;
+    }
+    .benefit-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+    .section-title {
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 2.2rem;
+      text-align: center;
+    }
+    .products {
+      padding: 2.5rem 0 2rem 0;
+    }
+    .product-card {
+      background: linear-gradient(135deg, #fff 70%, #e9ecef 100%);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem 1.2rem 1.5rem 1.2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      transition: transform 0.18s, box-shadow 0.18s;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }    .product-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 16px 48px rgba(253,185,46,0.22);
+    }
+    .product-icon {
+      color: var(--accent);
+      font-size: 2.5rem;
+      margin-bottom: 1.1rem;
+    }
+    .product-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .product-desc {
+      font-size: 1rem;
+      color: #4a5862;
+      margin-bottom: 1.2rem;
+    }
+    .btn-product {
+      background: var(--primary);
+      color: #fff;
+      border-radius: var(--radius);
+      font-weight: 600;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      transition: background 0.2s;
+    }
+    .btn-product:hover { background: var(--accent); color: var(--primary); }
+    .section-bg {
+      background: linear-gradient(135deg, #f7f8fa 70%, #fff 100%);
+      padding: 2.5rem 0;
+    }
+    .how-section {
+      background: linear-gradient(135deg, var(--primary) 70%, var(--primary-light) 100%);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2.5rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .how-icon {
+      color: var(--primary);
+      font-size: 2.2rem;
+      margin-bottom: 0.7rem;
+    }    .cta-section {
+      background: #2D3B45 !important;
+      color: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 12px 48px rgba(45,59,69,0.25);
+      padding: 2rem 1.2rem 2rem 1.2rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }    .cta-section .cta-title {
+      color: #FDB92E !important;
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+      text-shadow: none !important;
+    }
+    .cta-section .cta-desc {
+      color: #fff;
+    }
+    .cta-section .btn-main {
+      background: #fff;
+      color: #2D3B45;
+      border: none;
+      box-shadow: 0 6px 20px rgba(45,59,69,0.15);
+      margin-top: 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 0.8rem 2rem;
+      border-radius: var(--radius);
+      transition: background 0.2s, color 0.2s;
+    }
+    .cta-section .btn-main:hover {
+      background: var(--accent);
+      color: #2D3B45;
+    }
+    .footer {
+      background: linear-gradient(135deg, var(--primary) 70%, var(--primary-dark) 100%);
+      color: #fff;
+      padding: 2.5rem 0 1.2rem 0;
+      text-align: center;
+    }
+    .footer-logo {
+      max-width: 120px;
+      margin-bottom: 1.2rem;
+    }
+    .footer-links a {
+      color: #fff;
+      margin: 0 0.7rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-social a {
+      color: var(--accent);
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: color 0.2s;
+    }
+    .footer-social a:hover { color: #fff; }
+    .footer-contact {
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: var(--accent);
+      color: var(--primary);
+      border-radius: 50px;
+      box-shadow: 0 12px 48px rgba(253,185,46,0.65), 0 4px 20px rgba(0,0,0,0.45);
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 0.7rem 1.5rem;
+      display: flex;
+      align-items: center;
+      z-index: 999;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      animation: pulseZap 1.6s infinite;
+    }    .whatsapp-float:hover { background: var(--primary); color: #fff; }
+    @keyframes pulseZap {
+      0% { box-shadow: 0 0 0 0 rgba(253,185,46,0.45); }
+      70% { box-shadow: 0 0 0 16px rgba(253,185,46,0.05); }
+      100% { box-shadow: 0 0 0 0 rgba(253,185,46,0.45); }
+    }
+    @media (max-width: 991px) {
+      .hero-title { font-size: 2.1rem; }
+      .section-title { font-size: 1.5rem; }
+      .cta-title { font-size: 1.5rem; }
+      .cta-desc { font-size: 1.05rem; }
+    }    @media (max-width: 767px) {
+      .benefits, .how-section, .cta-section { padding: 1.2rem 1.5rem; }
+      .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .products { padding: 2.5rem 0.5rem 2rem 0.5rem; }
+      .section-bg { padding: 2.5rem 0.5rem; }
+      .product-card { padding: 1.2rem 0.7rem; margin-bottom: 1.5rem; }
+      .col-md-4 { margin-bottom: 1rem; padding: 0 0.8rem; }
+      .footer { padding: 1.5rem 1.2rem 0.7rem 1.2rem; }
+      .footer-logo { max-width: 90px; }
+      .whatsapp-float { font-size: 1.1rem; padding: 0.5rem 1rem; }
+      .cta-title { font-size: 1.1rem; }
+      .cta-desc { font-size: 0.98rem; }
+      .section-mobile-padding { padding-left: 1.2rem !important; padding-right: 1.2rem !important; }
+      
+      /* Accordion no mobile com mais espaço */
+      .premium-accordion { margin-left: -0.5rem; margin-right: -0.5rem; }
+      .accordion-body { padding: 1rem 0.5rem; }
+    }
+    /* Accordion Premium Melhorado */
+    .premium-accordion .accordion-item {
+      border: none;
+      border-radius: var(--radius);
+      margin-bottom: 1.2rem;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(45,59,69,0.13);
+      background: linear-gradient(90deg, #fff 80%, #FDB92E08 100%);
+      transition: box-shadow 0.25s;
+    }
+    .premium-accordion .accordion-item:focus-within,
+    .premium-accordion .accordion-item:hover {
+      box-shadow: 0 16px 48px rgba(253,185,46,0.18);
+    }
+    .premium-accordion .accordion-button {
+      position: relative;
+      font-weight: 800;
+      font-size: 1.18rem;
+      color: var(--primary);
+      background: linear-gradient(90deg,#fff 80%,#FDB92E10 100%);
+      box-shadow: 0 2px 12px rgba(45,59,69,0.07);
+      border: none;
+      outline: none;
+      border-radius: var(--radius) var(--radius) 0 0;
+      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+      padding-right: 2.5rem;
+    }
+    .premium-accordion .accordion-button::after {
+      background-image: none !important;
+      /* Remove o conteúdo padrão do Bootstrap */
+      content: '';
+    }
+    /* Adiciona a seta customizada FontAwesome manualmente dentro do botão */
+    .premium-accordion .accordion-button .fa-chevron-down {
+      display: inline-block;
+      margin-left: 0.7em;
+      font-size: 1.1em;
+      color: var(--accent);
+      transition: transform 0.25s cubic-bezier(.4,2,.6,1), color 0.18s;
+    }
+    .premium-accordion .accordion-button:not(.collapsed) .fa-chevron-down {
+      transform: rotate(180deg);
+      color: var(--primary);
+    }
+    .premium-accordion .accordion-button:focus {
+      box-shadow: 0 0 0 2px var(--accent);
+      outline: none;
+    }
+    .premium-accordion .accordion-body {
+      background: linear-gradient(90deg, #fff 90%, #FDB92E08 100%);
+      border-radius: 0 0 var(--radius) var(--radius);
+      box-shadow: 0 2px 12px rgba(45,59,69,0.04);
+      transition: background 0.18s;
+      animation: fadeAccordion 0.5s;
+    }
+    @keyframes fadeAccordion {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: none; }
+    }
+    /* Microanimação nos botões */
+    .btn-product, .btn-main {
+      transition: background 0.18s, color 0.18s, box-shadow 0.18s, transform 0.18s;
+    }
+    .btn-product:hover, .btn-main:hover {
+      box-shadow: 0 8px 32px rgba(253,185,46,0.18);
+      transform: translateY(-2px) scale(1.04);
+    }
+    /* Badge de destaque */
+    .badge-novo {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent) 60%, #fffbe6 100%);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 800;
+      border-radius: 8px;
+      padding: 0.25em 0.7em;
+      margin-left: 0.5em;
+      box-shadow: 0 2px 8px rgba(253,185,46,0.13);
+      vertical-align: middle;
+      letter-spacing: 0.5px;
+    }
+    /* WhatsApp flutuante animado */
+    .whatsapp-float {
+      animation: pulseZap 1.6s infinite;
+    }
+    @keyframes pulseZap {
+      0% { box-shadow: 0 0 0 0 rgba(253,185,46,0.28); }
+      70% { box-shadow: 0 0 0 16px rgba(253,185,46,0.01); }
+      100% { box-shadow: 0 0 0 0 rgba(253,185,46,0.28); }
+    }    /* Contraste texto cards */
+    .product-desc {
+      color: #2D3B45;
+      opacity: 0.92;
+    }
+    /* Acessibilidade: foco visível */
+    .accordion-button:focus-visible, .btn:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+      /* Seção de Depoimentos - Premium */
+    .testimonials-section {
+      padding: 4rem 0;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .testimonials-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(253,185,46,0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0,211,85,0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    
+    .testimonial-card {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border-radius: 16px;
+      box-shadow: 
+        0 8px 32px rgba(0,0,0,0.08),
+        0 2px 8px rgba(0,0,0,0.04);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      height: 320px;
+      min-height: 320px;
+      max-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(253,185,46,0.1);
+      backdrop-filter: blur(10px);
+    }
+    
+    /* Efeito shimmer premium */
+    .testimonial-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(253,185,46,0.2) 20%, 
+        rgba(255,255,255,0.5) 50%, 
+        rgba(253,185,46,0.2) 80%, 
+        transparent
+      );
+      transition: left 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+      z-index: 1;
+    }
+    
+    /* Hover effects premium */
+    .testimonial-card:hover {
+      transform: translateY(-15px) scale(1.05);
+      box-shadow: 
+        0 28px 90px rgba(253,185,46,0.2),
+        0 12px 40px rgba(0,0,0,0.15);
+      border-color: rgba(253,185,46,0.4);
+    }
+    
+    .testimonial-card:hover::before {
+      left: 100%;
+    }
+    
+    /* Elementos internos do card premium */
+    .testimonial-quote {
+      font-size: 5rem;
+      color: var(--accent);
+      opacity: 0.15;
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      line-height: 1;
+      z-index: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .testimonial-card:hover .testimonial-quote {
+      opacity: 0.25;
+      transform: scale(1.1);
+    }
+    
+    .testimonial-stars {
+      position: relative;
+      z-index: 2;
+      color: var(--accent);
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      filter: drop-shadow(0 2px 6px rgba(253,185,46,0.4));
+      transition: all 0.3s ease;
+    }
+    
+    .testimonial-card:hover .testimonial-stars {
+      animation: starGlow 1.5s ease-in-out infinite;
+    }
+    
+    @keyframes starGlow {
+      0%, 100% { 
+        transform: scale(1);
+        filter: drop-shadow(0 2px 6px rgba(253,185,46,0.4));
+      }
+      50% { 
+        transform: scale(1.1);
+        filter: drop-shadow(0 4px 12px rgba(253,185,46,0.6));
+      }
+    }
+    
+    .testimonial-text {
+      position: relative;
+      z-index: 2;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 2rem;
+      font-style: italic;
+      font-weight: 500;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .testimonial-author {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .author-avatar {
+      color: var(--accent);
+      font-size: 2.5rem;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+    
+    .testimonial-card:hover .author-avatar {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    
+    .author-info {
+      text-align: left;
+    }
+    
+    .author-name {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+      transition: color 0.3s ease;
+    }
+    
+    .author-company {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-bottom: 0.1rem;
+    }
+    
+    .author-location {
+      color: #6b7280;
+      font-size: 0.85rem;
+      opacity: 0.7;
+      font-style: italic;
+    }
+    
+    /* Controles premium específicos para testimonials */
+    .testimonial-control {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(253,185,46,0.95) 0%, rgba(253,185,46,1) 100%);
+      backdrop-filter: blur(20px);
+      border: 3px solid rgba(255,255,255,0.4);
+      box-shadow: 
+        0 12px 40px rgba(253,185,46,0.4),
+        inset 0 2px 0 rgba(255,255,255,0.5);
+      color: var(--primary);
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .testimonial-control:hover {
+      background: linear-gradient(135deg, var(--accent) 0%, #e6a532 100%);
+      transform: translateY(-3px) scale(1.1);
+      box-shadow: 
+        0 16px 50px rgba(253,185,46,0.6),
+        inset 0 2px 0 rgba(255,255,255,0.6);
+      border-color: rgba(255,255,255,0.6);
+    }
+    
+    .testimonial-control i {
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+    
+    /* Indicadores premium para testimonials */
+    .testimonial-indicators {
+      bottom: -60px;
+      gap: 15px;
+      justify-content: center;
+    }
+    
+    .testimonial-indicators button {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: rgba(253,185,46,0.3);
+      border: 3px solid rgba(253,185,46,0.5);
+      margin: 0;
+      opacity: 1;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .testimonial-indicators button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: var(--accent);
+      border-radius: 50%;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: translate(-50%, -50%);
+    }
+    
+    .testimonial-indicators button.active {
+      background-color: var(--accent);
+      border-color: var(--accent);
+      transform: scale(1.4);
+      box-shadow: 
+        0 6px 20px rgba(253,185,46,0.5),
+        0 0 0 6px rgba(253,185,46,0.2);
+    }
+    
+    .testimonial-indicators button.active::before {
+      width: 8px;
+      height: 8px;
+      background: rgba(255,255,255,0.9);
+    }
+    
+    /* CTA dos testimonials */
+    .testimonials-cta {
+      background: linear-gradient(135deg, rgba(253,185,46,0.1) 0%, rgba(0,211,85,0.05) 100%);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      border: 2px solid rgba(253,185,46,0.2);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    
+    .testimonials-cta:hover {
+      border-color: rgba(253,185,46,0.4);
+      background: linear-gradient(135deg, rgba(253,185,46,0.15) 0%, rgba(0,211,85,0.08) 100%);
+      transform: translateY(-2px);
+    }
+    
+    /* Melhorias responsivas para testimonials premium */
+    @media (max-width: 768px) {
+      .testimonial-card-premium {
+        height: 300px;
+        min-height: 300px;
+        max-height: 300px;
+        padding: 2rem 1.5rem;
+      }
+      
+      .testimonial-quote {
+        font-size: 4rem;
+        top: 10px;
+        left: 15px;
+      }
+      
+      .testimonial-text {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+      
+      .testimonial-control {
+        width: 45px;
+        height: 45px;
+      }
+      
+      .testimonial-control i {
+        font-size: 1rem;
+      }
+      
+      .testimonials-cta {
+        padding: 2rem 1.5rem;
+      }
+      
+      .author-avatar {
+        font-size: 2rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .testimonial-card-premium {
+        height: 280px;
+        min-height: 280px;
+        max-height: 280px;
+        padding: 1.8rem 1.3rem;
+      }
+      
+      .testimonial-stars {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+      
+      .testimonial-text {
+        font-size: 1rem;
+      }
+      
+      .author-info {
+        text-align: center;
+      }
+    }
+    
+    /* Animação de entrada premium para testimonials */
+    .testimonial-card-premium {
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+      animation: testimonialFadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0.3s forwards;
+    }
+    
+    @keyframes testimonialFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    
+    /* Variações de delay para entrada escalonada */
+    .testimonial-card-premium:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    
+    .testimonial-card-premium:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    
+    .testimonial-card-premium:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+    
+    /* Efeito de foco para acessibilidade */
+    .testimonial-control:focus-visible {
+      outline: 3px solid rgba(253,185,46,0.6);
+      outline-offset: 2px;
+    }
+    
+    .testimonial-indicators button:focus-visible {
+      outline: 2px solid rgba(253,185,46,0.8);
+      outline-offset: 2px;
+    }
+
+    /* Responsividade mobile para depoimentos */
+    @media (max-width: 768px) {
+      .testimonials-section {
+        padding: 3rem 0;
+      }
+      
+      #testimonialCarousel .carousel-inner {
+        padding: 0 60px; /* Mais espaço para os botões */
+        min-height: 320px;
+      }
+      
+      #testimonialCarousel .carousel-item {
+        min-height: 320px;
+      }
+      
+      #testimonialCarousel .testimonial-card {
+        max-width: 300px;
+        height: 280px;
+        min-height: 280px;
+        max-height: 280px;
+        padding: 1.8rem 1.5rem;
+      }
+      
+      #testimonialCarousel .carousel-control-prev,
+      #testimonialCarousel .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        /* Posicionamento mobile corrigido */
+        left: 10px;
+        right: 10px;
+      }
+      
+      #testimonialCarousel .carousel-control-prev {
+        left: 10px;
+        right: auto;
+      }
+      #testimonialCarousel .carousel-control-next {
+        right: 10px;
+        left: auto;
+      }
+      
+      .testimonial-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+      }
+      
+      .testimonial-text::before {
+        font-size: 3rem;
+        top: -10px;
+        left: -10px;
+      }
+      
+      .author-name {
+        font-size: 1.05rem;
+      }
+      
+      .author-company {
+        font-size: 0.9rem;
+      }
+        .testimonial-stars {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+    }
+    
+    /* Ajuste extra para telas muito pequenas */
+    @media (max-width: 480px) {
+      #testimonialCarousel .carousel-inner {
+        padding: 0 50px; /* Ainda mais espaço */
+      }
+      
+      #testimonialCarousel .carousel-control-prev,
+      #testimonialCarousel .carousel-control-next {
+        width: 35px;
+        height: 35px;
+      }
+      
+      #testimonialCarousel .carousel-control-prev {
+        left: 8px;
+      }
+      #testimonialCarousel .carousel-control-next {
+        right: 8px;
+      }
+    }
+    
+    /* FAQ Section */
+    .faq-section {
+      padding: 3rem 0;
+      background: linear-gradient(135deg, #fff 70%, #f7f8fa 100%);
+    }
+    .faq-accordion .accordion-item {
+      border: none;
+      border-radius: var(--radius);
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 20px rgba(45,59,69,0.08);
+      overflow: hidden;
+    }
+    .faq-accordion .accordion-button {
+      background: linear-gradient(135deg, #fff 70%, #f7f8fa 100%);
+      border: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--primary);
+      padding: 1.2rem 1.5rem;
+    }
+    .faq-accordion .accordion-button:not(.collapsed) {
+      background: var(--accent);
+      color: var(--primary);
+      box-shadow: none;
+    }
+    .faq-accordion .accordion-body {
+      background: #fff;
+      border-top: 2px solid var(--accent);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }    /* Carrossel de Depoimentos Mobile - Premium */
+    #testimonialCarousel {
+      position: relative;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+    
+    #testimonialCarousel .carousel-inner {
+      padding: 0 20px;
+      min-height: 380px;
+    }
+    
+    #testimonialCarousel .carousel-item {
+      min-height: 380px;
+      display: flex;
+      align-items: center;
+      transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    #testimonialCarousel .testimonial-card {
+      margin: 0 auto;
+      max-width: 340px;
+      height: 320px;
+      min-height: 320px;
+      max-height: 320px;
+      transform: scale(0.92);
+      opacity: 0.6;
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      filter: blur(1px);
+    }
+    
+    /* Card ativo no centro - melhorado */
+    #testimonialCarousel .carousel-item.active .testimonial-card {
+      transform: scale(1);
+      opacity: 1;
+      filter: blur(0px);
+      z-index: 2;
+    }
+      /* Controles premium com glassmorphism - Posicionamento corrigido */
+    #testimonialCarousel .carousel-control-prev,
+    #testimonialCarousel .carousel-control-next {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(253,185,46,0.9);
+      backdrop-filter: blur(15px);
+      border: 2px solid rgba(255,255,255,0.3);
+      box-shadow: 
+        0 8px 32px rgba(253,185,46,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.4);
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 1;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      z-index: 3;
+      margin: 0;
+      /* Posicionamento corrigido para não cortar */
+      overflow: visible;
+    }
+    
+    #testimonialCarousel .carousel-control-prev {
+      left: 5px;
+    }
+    #testimonialCarousel .carousel-control-next {
+      right: 5px;
+    }
+    
+    #testimonialCarousel .carousel-control-prev:hover,
+    #testimonialCarousel .carousel-control-next:hover {
+      background: rgba(253,185,46,1);
+      transform: translateY(-50%) scale(1.15);
+      box-shadow: 
+        0 12px 40px rgba(253,185,46,0.5),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+      border-color: rgba(255,255,255,0.5);
+    }
+    
+    /* Ícones dos controles com animação */
+    #testimonialCarousel .carousel-control-prev-icon,
+    #testimonialCarousel .carousel-control-next-icon {
+      width: 20px;
+      height: 20px;
+      background-image: none;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+    
+    #testimonialCarousel .carousel-control-prev:hover .carousel-control-prev-icon,
+    #testimonialCarousel .carousel-control-next:hover .carousel-control-next-icon {
+      transform: scale(1.2);
+    }
+    
+    #testimonialCarousel .carousel-control-prev-icon::before {
+      content: '\f104';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: var(--primary);
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    #testimonialCarousel .carousel-control-next-icon::before {
+      content: '\f105';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: var(--primary);
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    /* Indicadores premium */
+    #testimonialCarousel .carousel-indicators {
+      bottom: -50px;
+      margin-bottom: 0;
+      gap: 12px;
+      justify-content: center;
+    }
+    
+    #testimonialCarousel .carousel-indicators button {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: rgba(253,185,46,0.25);
+      border: 2px solid rgba(253,185,46,0.4);
+      margin: 0;
+      opacity: 1;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    #testimonialCarousel .carousel-indicators button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: var(--accent);
+      border-radius: 50%;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: translate(-50%, -50%);
+    }
+    
+    #testimonialCarousel .carousel-indicators button.active {
+      background-color: var(--accent);
+      border-color: var(--accent);
+      transform: scale(1.3);
+      box-shadow: 
+        0 4px 16px rgba(253,185,46,0.4),
+        0 0 0 4px rgba(253,185,46,0.2);
+    }
+    
+    #testimonialCarousel .carousel-indicators button.active::before {
+      width: 6px;
+      height: 6px;
+      background: rgba(255,255,255,0.8);
+    }
+    
+    /* Carrossel de Produtos */
+    .product-carousel {
+      position: relative;
+      overflow: hidden;
+    }
+    .product-carousel .carousel-inner {
+      padding: 0 50px;
+    }    .product-carousel .carousel-control-prev,
+    .product-carousel .carousel-control-next {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: transparent;
+      border: none;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 1;
+      box-shadow: none;
+      transition: all 0.3s;
+    }
+    .product-carousel .carousel-control-prev {
+      left: 10px;
+    }
+    .product-carousel .carousel-control-next {
+      right: 10px;
+    }    .product-carousel .carousel-control-prev:hover,
+    .product-carousel .carousel-control-next:hover {
+      background: transparent;
+      box-shadow: none;
+      transform: translateY(-50%) scale(1.2);
+    }    .product-carousel .carousel-control-prev-icon,
+    .product-carousel .carousel-control-next-icon {
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border-radius: 0;
+    }    /* Ícones customizados para carrossel */
+    .product-carousel .carousel-control-prev-icon::before {
+      content: '\f104';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: var(--accent);
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .product-carousel .carousel-control-next-icon::before {
+      content: '\f105';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: var(--accent);
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .product-carousel .carousel-control-prev-icon,
+    .product-carousel .carousel-control-next-icon {
+      background-image: none !important;
+      position: relative;
+    }
+    .product-carousel .carousel-indicators {
+      bottom: -30px;
+      margin-bottom: 0;
+    }
+    .product-carousel .carousel-indicators button {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      border: none;
+      margin: 0 4px;
+      opacity: 0.5;
+    }
+    .product-carousel .carousel-indicators button.active {
+      opacity: 1;
+      box-shadow: 0 2px 8px rgba(253,185,46,0.3);
+    }    /* Carrossel responsivo para mobile */
+    @media (max-width: 768px) {
+      .product-carousel .carousel-inner {
+        padding: 0 25px;
+      }
+      .product-carousel .carousel-control-prev,
+      .product-carousel .carousel-control-next {
+        width: 30px;
+        height: 30px;
+      }
+      .product-carousel .carousel-control-prev {
+        left: 2px;
+      }
+      .product-carousel .carousel-control-next {
+        right: 2px;
+      }      
+      .product-carousel .carousel-control-prev-icon::before,
+      .product-carousel .carousel-control-next-icon::before {
+        font-size: 14px;
+      }
+      
+      /* Indicadores mais próximos ao card */
+      .product-carousel .carousel-indicators {
+        bottom: -20px;
+      }
+      
+      .product-carousel .carousel-indicators button {
+        width: 6px;
+        height: 6px;
+        margin: 0 3px;
+      }
+      
+      /* Força todos os carrosséis de produtos a serem horizontais no mobile */
+      .product-carousel .carousel-item .row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      .product-carousel .carousel-item .col-md-4 {
+        flex: 0 0 85%;
+        max-width: 85%;
+        scroll-snap-align: center;
+        margin-right: 15px;
+      }
+      
+      .product-carousel .carousel-item .col-md-4:last-child {
+        margin-right: 0;
+      }
+    }/* Auto-altura para slides do carrossel */
+    .product-carousel .carousel-item {
+      min-height: 400px;
+    }
+      /* Layout mobile - um produto por slide */
+    @media (max-width: 768px) {
+      .product-carousel .carousel-item {
+        min-height: auto;
+        padding: 10px 0;
+      }
+      
+      /* No mobile, cada produto ocupa a largura total */
+      .product-carousel .carousel-item .col-12 {
+        padding: 0 10px;
+      }
+        /* Ajusta o card do produto para mobile - layout mais horizontal */
+      .product-carousel .product-card {
+        margin-bottom: 0;
+        padding: 15px;
+        min-height: 250px;
+        max-height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+      }
+      
+      /* Layout horizontal para ícone e título */
+      .product-carousel .product-card .product-icon {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      
+      .product-carousel .product-card .product-title {
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+        line-height: 1.2;
+        text-align: center;
+      }      /* Descrição mais compacta */
+      .product-carousel .product-card .product-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        text-align: left;
+        flex-grow: 1;
+      }
+      
+      /* Botão mais compacto */
+      .product-carousel .product-card .btn-product {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        align-self: center;
+        margin-top: auto;
+      }
+      
+      /* Centraliza o conteúdo no mobile */
+      .product-carousel .carousel-item .row {
+        margin: 0;
+        justify-content: center;
+      }
+        /* Reduz padding do carrossel no mobile */
+      .product-carousel .carousel-inner {
+        padding: 0 25px;
+      }
+      
+      /* Ajusta botões flutuantes no mobile */
+      .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+      }
+      .floating-quote-btn {
+        bottom: 80px;
+        right: 20px;
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+      }
+    }
+    
+    /* Botão Ultimate CTA dos Depoimentos */
+    .btn-zap-ultimate {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+      color: #fff;
+      border: none;
+      border-radius: 16px;
+      padding: 0.8rem 1.5rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 
+        0 12px 40px rgba(37, 211, 102, 0.4),
+        0 4px 16px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+      overflow: hidden;
+      min-height: 60px;
+    }
+    
+    .btn-zap-ultimate:hover {
+      background: linear-gradient(135deg, #128c7e 0%, #25d366 100%);
+      color: #fff;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 
+        0 16px 50px rgba(37, 211, 102, 0.5),
+        0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn-zap-ultimate::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        transparent
+      );
+      transition: left 0.8s ease;
+    }
+    
+    .btn-zap-ultimate:hover::before {
+      left: 100%;
+    }
+    
+    .zap-ultimate-content {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .zap-ultimate-icon {
+      font-size: 1.5rem;
+      color: #fff;
+      animation: zapPulse 2s infinite;
+    }
+    
+    @keyframes zapPulse {
+      0%, 100% { 
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0.5));
+      }
+      50% { 
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+      }
+    }
+    
+    .zap-ultimate-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 1.2;
+    }
+    
+    .zap-ultimate-text .main-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.1rem;
+    }
+    
+    .zap-ultimate-text .sub-text {
+      font-size: 0.85rem;
+      font-weight: 500;
+      opacity: 0.9;
+      color: #e8f5e8;
+    }
+    
+    .zap-ultimate-badge {
+      background: #fff;
+      color: #25d366;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.25rem 0.6rem;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Badges minimalistas para CTA */
+    .market-leader-badge {
+      background: rgba(253, 185, 46, 0.1);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      border: 1px solid rgba(253, 185, 46, 0.3);
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .urgency-badge-minimal {
+      background: rgba(34, 197, 94, 0.1);
+      color: #16a34a;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .minimal-benefit {
+      background: rgba(243, 244, 246, 0.8);
+      color: #374151;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.3rem 0.7rem;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    /* Centralização do depoimento */
+    .minimal-testimonial .stars {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+    }
+    
+    .minimal-testimonial .testimonial-text {
+      text-align: center;
+      font-style: italic;
+      line-height: 1.6;
+      color: #374151;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+    
+    .minimal-testimonial .testimonial-author {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    
+    /* Responsividade mobile para botão ultimate */
+    @media (max-width: 768px) {
+      .btn-zap-ultimate {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+        min-height: 55px;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      
+      .zap-ultimate-content {
+        gap: 0.6rem;
+      }
+      
+      .zap-ultimate-icon {
+        font-size: 1.3rem;
+      }
+      
+      .zap-ultimate-text .main-text {
+        font-size: 1rem;
+      }
+      
+      .zap-ultimate-text .sub-text {
+        font-size: 0.8rem;
+      }
+      
+      .zap-ultimate-badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+      }
+      
+      .market-leader-badge,
+      .urgency-badge-minimal {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/ZAPACK LOGO ORIGINAL.png" alt="Zapack logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#produtos">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#como-funciona">Como Funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+        <a href="https://w.app/zapack" target="_blank" class="btn btn-main ms-lg-3">Fale com a Zapack</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Adesivos, Etiquetas e Rótulos Personalizados:<br>Destaque Sua Marca em Cada Detalhe!</h1>
+      <div class="hero-desc">Impulsione sua marca com a Zapack.<br>Design profissional, produção ágil e atendimento especializado para o seu negócio.</div>
+      <a href="#contato" class="btn btn-main">Quero um Orçamento Grátis</a>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section class="benefits container">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="benefit-icon"><i class="fas fa-gem"></i></div>
+        <div class="benefit-title">Qualidade Premium</div>
+        <div>Materiais resistentes, impressão de alta definição e acabamento profissional.</div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+        <div class="benefit-title">Entrega Rápida</div>
+        <div>Produção ágil e envio para todo o Brasil. Receba seus produtos no prazo.</div>
+      </div>
+      <div class="col-md-4">
+        <div class="benefit-icon"><i class="fas fa-headset"></i></div>        <div class="benefit-title">Atendimento Especializado</div>
+        <div>Equipe pronta para te ajudar do orçamento à entrega. Consultoria personalizada para clientes.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section class="products section-bg" id="produtos">
+    <div class="container">
+      <div class="section-title">Nossos Produtos</div>
+      <!-- Accordion de Categorias de Produtos -->
+      <div class="accordion premium-accordion" id="produtosAccordion" style="margin-bottom:2.5rem;">
+        <!-- Categoria: Adesivos -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAdesivos">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdesivos" aria-expanded="true" aria-controls="collapseAdesivos" style="font-weight:800; font-size:1.18rem; color:var(--primary); background:linear-gradient(90deg,#fff 80%,#FDB92E10 100%); box-shadow:0 2px 12px rgba(45,59,69,0.07);">
+              <i class="fas fa-sticky-note me-2" style="color:var(--accent);"></i> Adesivos
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </h2>          <div id="collapseAdesivos" class="accordion-collapse collapse show" aria-labelledby="headingAdesivos" data-bs-parent="#produtosAccordion">
+            <div class="accordion-body">
+              <!-- Carrossel de Adesivos -->
+              <div id="carrosselAdesivos" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4">                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-tape"></i></div>
+                          <div class="product-title">Adesivo Casca de Ovo</div>
+                          <div class="product-desc">Ideal para lacrar produtos e embalagens com segurança. Dificulta a remoção e protege contra violações, reforçando a confiança na entrega.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-map-marker-alt"></i></div>
+                          <div class="product-title">Adesivo de Piso</div>
+                          <div class="product-desc">Impressos em vinil branco com alta qualidade e durabilidade, são ideais para sinalização prática em ambientes internos e eventos promocionais.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-tshirt"></i></div>
+                          <div class="product-title">Adesivo DTF Têxtil <span class="badge-novo">Novo</span></div>
+                          <div class="product-desc">Ideal para personalizar roupas e acessórios com cores vibrantes e alta durabilidade. Fácil de aplicar, com acabamento profissional.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-sun"></i></div>
+                          <div class="product-title">Adesivo DTF UV</div>
+                          <div class="product-desc">Perfeito para divulgar marcas, produtos ou eventos com alta definição. Pode ser aplicado em diversas superfícies, com ótima resistência e acabamento durável.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-cube"></i></div>
+                          <div class="product-title">Adesivo Resinado</div>
+                          <div class="product-desc">Ideal para criar etiquetas com efeito 3D e alta durabilidade. Também é perfeito para personalização de tanques de moto com acabamento profissional e resistente.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-fire"></i></div>
+                          <div class="product-title">Adesivo Termocolante</div>
+                          <div class="product-desc">Perfeito para personalizar roupas, uniformes e peças têxteis com praticidade. Aplicado com calor, garante fixação resistente e visual profissional.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-ruler-combined"></i></div>
+                          <div class="product-title">Metro Quadrado</div>
+                          <div class="product-desc">Adesivos em grandes formatos ideais para vitrines, sinalizações, paredes ou veículos. Alta cobertura com excelente durabilidade.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-car-side"></i></div>
+                          <div class="product-title">Para Parachoque</div>
+                          <div class="product-desc">Feito com vinil resistente, é ótimo para comunicações promocionais, campanhas criativas ou identificação automotiva.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-cut"></i></div>
+                          <div class="product-title">Plotter de Recorte</div>
+                          <div class="product-desc">Utilizado para criar adesivos com corte de precisão. Ideal para logotipos, letras, ícones ou decoração de superfícies.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controles do carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselAdesivos" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselAdesivos" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carrosselAdesivos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carrosselAdesivos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carrosselAdesivos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Categoria: Etiquetas -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEtiquetas">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEtiquetas" aria-expanded="false" aria-controls="collapseEtiquetas" style="font-weight:800; font-size:1.18rem; color:var(--primary); background:linear-gradient(90deg,#fff 80%,#FDB92E10 100%); box-shadow:0 2px 12px rgba(45,59,69,0.07);">
+              <i class="fas fa-tag me-2" style="color:var(--accent);"></i> Etiquetas
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </h2>          <div id="collapseEtiquetas" class="accordion-collapse collapse" aria-labelledby="headingEtiquetas" data-bs-parent="#produtosAccordion">
+            <div class="accordion-body">              <!-- Carrossel de Etiquetas -->              <div id="carrosselEtiquetas" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-star"></i></div>
+                          <div class="product-title">Etiquetas Corte Especial</div>
+                          <div class="product-desc">Com formatos diferenciados e recorte criativo, são ideais para valorizar embalagens, brindes e produtos de forma personalizada.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-tag"></i></div>
+                          <div class="product-title">Etiquetas Padrão</div>
+                          <div class="product-desc">Soluções versáteis para identificação, organização e personalização do dia a dia. Perfeitas para uso logístico e comercial.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-file-alt"></i></div>
+                          <div class="product-title">Folha 330×480 mm</div>
+                          <div class="product-desc">Formato ideal para quem precisa de liberdade criativa, podendo aplicar ou recortar conforme a necessidade de cada projeto.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-barcode"></i></div>
+                          <div class="product-title">Etiquetas com Código de Barras</div>
+                          <div class="product-desc">Ideais para inventário, logística e controle de estoque. Impressão de alta qualidade que garante leitura precisa dos códigos.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-shield-virus"></i></div>
+                          <div class="product-title">Etiquetas Transparentes</div>
+                          <div class="product-desc">Discretas e elegantes, permitem que o produto se destaque mantendo informações importantes visíveis.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-medal"></i></div>
+                          <div class="product-title">Etiquetas Premium</div>
+                          <div class="product-desc">Acabamento especial com laminação e efeitos diferenciados para produtos de alto valor agregado.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controles do carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselEtiquetas" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselEtiquetas" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carrosselEtiquetas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carrosselEtiquetas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        <!-- Categoria: Rótulos -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRotulos">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRotulos" aria-expanded="false" aria-controls="collapseRotulos" style="font-weight:800; font-size:1.18rem; color:var(--primary); background:linear-gradient(90deg,#fff 80%,#FDB92E10 100%); box-shadow:0 2px 12px rgba(45,59,69,0.07);">
+              <i class="fas fa-receipt me-2" style="color:var(--accent);"></i> Rótulos
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </h2>          <div id="collapseRotulos" class="accordion-collapse collapse" aria-labelledby="headingRotulos" data-bs-parent="#produtosAccordion">
+            <div class="accordion-body">              <!-- Carrossel de Rótulos -->              <div id="carrosselRotulos" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4">                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-receipt"></i></div>
+                          <div class="product-title">Rótulos</div>
+                          <div class="product-desc">Versáteis e de alto impacto visual, valorizam produtos em embalagens diversas como potes, frascos, caixas e muito mais.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-snowflake"></i></div>
+                          <div class="product-title">Rótulo Bobina para Frios e Congelados</div>
+                          <div class="product-desc">Ideal para embalagens de alimentos refrigerados ou congelados. Pode ser usado em geladeiras, freezers e até em contato com umidade, sem perder a qualidade.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-record-vinyl"></i></div>
+                          <div class="product-title">Rótulo Bobina</div>
+                          <div class="product-desc">Solução eficiente para produção em escala. Ideal para quem precisa aplicar rótulos com agilidade e padronização.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-wine-bottle"></i></div>
+                          <div class="product-title">Rótulos para Bebidas</div>
+                          <div class="product-desc">Resistentes à umidade e condensação, ideais para cervejas artesanais, vinhos, sucos e outras bebidas.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-apple-alt"></i></div>
+                          <div class="product-title">Rótulos para Alimentos</div>
+                          <div class="product-desc">Seguros para contato alimentar, com acabamento que valoriza produtos artesanais, doces, conservas e especiarias.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-leaf"></i></div>
+                          <div class="product-title">Rótulos Sustentáveis</div>
+                          <div class="product-desc">Produzidos com materiais eco-friendly e tintas à base de água, ideais para marcas conscientes.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controles do carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselRotulos" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselRotulos" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carrosselRotulos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carrosselRotulos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Categoria: Serviços Especiais -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingServicos">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServicos" aria-expanded="false" aria-controls="collapseServicos" style="font-weight:800; font-size:1.18rem; color:var(--primary); background:linear-gradient(90deg,#fff 80%,#FDB92E10 100%); box-shadow:0 2px 12px rgba(45,59,69,0.07);">
+              <i class="fas fa-tools me-2" style="color:var(--accent);"></i> Serviços Especiais
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </h2>          <div id="collapseServicos" class="accordion-collapse collapse" aria-labelledby="headingServicos" data-bs-parent="#produtosAccordion">
+            <div class="accordion-body">              <!-- Carrossel de Serviços Especiais -->              <div id="carrosselServicos" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4">                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-lock-open"></i></div>
+                          <div class="product-title">Lacre de Segurança</div>
+                          <div class="product-desc">Ideal para proteger embalagens e documentos. Ao ser violado, deixa evidências visuais claras, reforçando credibilidade e segurança.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-oil-can"></i></div>
+                          <div class="product-title">Troca de Óleo</div>
+                          <div class="product-desc">Etiquetas funcionais para oficinas e postos. Permitem registrar e lembrar o cliente da próxima manutenção com facilidade.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-id-card-alt"></i></div>
+                          <div class="product-title">Smart Card</div>
+                          <div class="product-desc">Personalização elegante em formato de cartão. Ideal para kits, brindes e apresentações diferenciadas da sua marca.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-award"></i></div>
+                          <div class="product-title">Selo de Qualidade</div>
+                          <div class="product-desc">Demonstre a qualidade e procedência dos seus produtos com selos profissionais que transmitem confiança.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-qrcode"></i></div>
+                          <div class="product-title">QR Code Personalizado</div>
+                          <div class="product-desc">Conecte o físico ao digital com QR codes estilizados que direcionam para seu site, redes sociais ou catálogo.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="product-card">
+                          <div class="product-icon"><i class="fas fa-gift"></i></div>
+                          <div class="product-title">Kit Personalização</div>
+                          <div class="product-desc">Solução completa para eventos e promoções com adesivos, etiquetas e rótulos coordenados.</div>
+                          <a href="#contato" class="btn btn-product">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controles do carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselServicos" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselServicos" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carrosselServicos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carrosselServicos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Categoria: Serviços Especiais -->
+      </div>      <!-- Fim do Accordion de Categorias de Produtos -->
+    </div>
+  </section>
+
+  <!-- Como Funciona / Arte Online -->
+  <section class="how-section container section-mobile-padding" id="como-funciona" style="background: var(--primary); box-shadow: 0 12px 48px rgba(45,59,69,0.18);">
+    <div class="text-center mb-4">
+      <div style="font-size:2.1rem; font-weight:900; color:#fff; letter-spacing:-1px; margin-bottom:0.5rem;">
+        <i class="fas fa-magic" style="color:var(--accent); font-size:2.3rem; vertical-align:middle;"></i>
+        Serviço de Arte Online <span style="color:var(--accent);">Zapack</span>
+      </div>
+      <div style="font-size:1.25rem; color:#fff; font-weight:600; max-width:700px; margin:0 auto 1.2rem auto;">
+        Você vende, a gente cria! <span style="color:var(--accent); font-weight:700;">Deixe sua marca profissional e sem dor de cabeça.</span>
+      </div>      <div style="font-size:1.08rem; color:#e6e6e6; max-width:700px; margin:0 auto 2.2rem auto;">
+        Contrate nosso serviço de design personalizado e tenha um time de especialistas criando materiais incríveis para sua marca, do briefing à entrega final. Atendimento 100% online, prático e sem surpresas!
+      </div>
+    </div>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4 col-12">
+        <div style="background:rgba(255,255,255,0.07); border-radius:14px; padding:1.5rem; height:100%; box-shadow:0 2px 12px rgba(45,59,69,0.04);">
+          <div style="font-size:2.2rem; color:var(--accent); margin-bottom:0.7rem;"><i class="fas fa-globe-americas"></i></div>
+          <div style="font-weight:700; color:#fff; margin-bottom:0.3rem;">Atendimento de qualquer lugar</div>
+          <div style="color:#e6e6e6; font-size:1.05rem;">Conecte-se com nosso time sem sair de casa, via Google Meet ou WhatsApp.</div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <div style="background:rgba(255,255,255,0.07); border-radius:14px; padding:1.5rem; height:100%; box-shadow:0 2px 12px rgba(45,59,69,0.04);">
+          <div style="font-size:2.2rem; color:var(--accent); margin-bottom:0.7rem;"><i class="fas fa-users-cog"></i></div>
+          <div style="font-weight:700; color:#fff; margin-bottom:0.3rem;">Equipe de especialistas</div>
+          <div style="color:#e6e6e6; font-size:1.05rem;">Nossa equipe cria, ajusta e revisa suas artes para garantir o melhor resultado.</div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <div style="background:rgba(255,255,255,0.07); border-radius:14px; padding:1.5rem; height:100%; box-shadow:0 2px 12px rgba(45,59,69,0.04);">
+          <div style="font-size:2.2rem; color:var(--accent); margin-bottom:0.7rem;"><i class="fas fa-print"></i></div>
+          <div style="font-weight:700; color:#fff; margin-bottom:0.3rem;">Zero erro de impressão</div>
+          <div style="color:#e6e6e6; font-size:1.05rem;">Garantia de arquivos prontos para produção, sem dor de cabeça ou retrabalho.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-8">
+        <ul style="list-style:none; padding:0; margin:2.2rem 0 0 0; display:flex; flex-wrap:wrap; justify-content:center; gap:1.2rem;">
+          <li style="background:rgba(255,255,255,0.13); border-radius:10px; padding:0.7rem 1.2rem; color:#fff; font-weight:600; font-size:1.05rem; display:flex; align-items:center;"><i class="fas fa-check-circle me-2" style="color:var(--accent);"></i>Comodidade total online</li>
+          <li style="background:rgba(255,255,255,0.13); border-radius:10px; padding:0.7rem 1.2rem; color:#fff; font-weight:600; font-size:1.05rem; display:flex; align-items:center;"><i class="fas fa-check-circle me-2" style="color:var(--accent);"></i>Corte de custos com designer</li>
+          <li style="background:rgba(255,255,255,0.13); border-radius:10px; padding:0.7rem 1.2rem; color:#fff; font-weight:600; font-size:1.05rem; display:flex; align-items:center;"><i class="fas fa-check-circle me-2" style="color:var(--accent);"></i>Arte alinhada ao seu negócio</li>
+          <li style="background:rgba(255,255,255,0.13); border-radius:10px; padding:0.7rem 1.2rem; color:#fff; font-weight:600; font-size:1.05rem; display:flex; align-items:center;"><i class="fas fa-check-circle me-2" style="color:var(--accent);"></i>Agilidade e acompanhamento</li>
+        </ul>
+      </div>
+    </div>  </section>
+
+  <!-- Entrega -->
+  <section class="section-bg">
+    <div class="container">
+      <div class="section-title">Entrega Rápida e Segura</div>
+      <div class="row text-center">
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="how-icon"><i class="fas fa-store"></i></div>
+          <div class="benefit-title">Retirada na Base</div>
+          <div>Rapidez total. Retire diretamente em nossas bases.</div>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="how-icon"><i class="fas fa-building"></i></div>
+          <div class="benefit-title">Balcão BH</div>
+          <div>Loja em BH com fácil acesso, rapidez e flexibilidade.</div>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="how-icon"><i class="fas fa-truck"></i></div>
+          <div class="benefit-title">Envio para todo Brasil</div>
+          <div>Entrega rápida e segura via Correios ou transportadora.</div>
+        </div>
+        <div class="col-md-3">
+          <div class="how-icon"><i class="fas fa-motorcycle"></i></div>
+          <div class="benefit-title">Motoboy Express</div>
+          <div>Entrega no mesmo dia para pedidos urgentes e locais.</div>
+        </div>
+      </div>
+    </div>  </section>
+
+  <!-- Sustentabilidade FSC -->
+  <section class="sustainability-section section-bg" style="background: linear-gradient(120deg, #e8f5e9 60%, #f0fdf4 100%); padding: 4.5rem 0 4rem 0;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title" style="font-size: 2.7rem; font-weight: 900; margin-bottom: 1.1rem; color: #15803d; letter-spacing: -1px;">
+          <span style="vertical-align: middle; font-size: 2.2rem; margin-right: 0.5rem;">🌱</span>Compromisso com a Sustentabilidade
+        </h2>
+        <p class="lead mb-4" style="color: #388e3c; max-width: 700px; margin: 0 auto; font-size: 1.25rem;">
+          A Zapack é <strong style="color: var(--accent);">certificada FSC®</strong> e adota práticas responsáveis em toda a cadeia de produção, promovendo um futuro mais verde e consciente.
+        </p>
+      </div>
+      <div class="row justify-content-center g-4 align-items-stretch">
+        <div class="col-lg-4 col-md-6">
+          <div class="sustainability-card h-100" style="background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(34,197,94,0.08); padding: 2.1rem 1.5rem; text-align: center;">
+            <div class="sustainability-icon mb-3">
+              <i class="fas fa-certificate" style="color: #22c55e; font-size: 2.2rem;"></i>
+            </div>
+            <h4 style="font-weight: 800; color: #15803d;">Certificação FSC®</h4>
+            <p style="color: #4b5563;">Garantia de origem responsável: nossos papéis e insumos são certificados pelo <strong>Forest Stewardship Council</strong>, assegurando manejo florestal sustentável e respeito ao meio ambiente.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="sustainability-card h-100" style="background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(34,197,94,0.08); padding: 2.1rem 1.5rem; text-align: center;">
+            <div class="sustainability-icon mb-3">
+              <i class="fas fa-leaf" style="color: #16a34a; font-size: 2.2rem;"></i>
+            </div>
+            <h4 style="font-weight: 800; color: #15803d;">Materiais Eco-friendly</h4>
+            <p style="color: #4b5563;">Utilizamos tintas à base de água, adesivos recicláveis e substratos biodegradáveis, reduzindo o impacto ambiental e incentivando a economia circular.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="sustainability-card h-100" style="background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(34,197,94,0.08); padding: 2.1rem 1.5rem; text-align: center;">
+            <div class="sustainability-icon mb-3">
+              <i class="fas fa-recycle" style="color: #15803d; font-size: 2.2rem;"></i>
+            </div>
+            <h4 style="font-weight: 800; color: #15803d;">Processo Sustentável</h4>
+            <p style="color: #4b5563;">Minimizamos desperdícios com planejamento inteligente, reaproveitamento de materiais e descarte responsável. Incentivamos clientes a optarem por soluções sustentáveis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 text-center">
+          <div class="fsc-badge" style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #22c55e, #16a34a); color: white; padding: 1.2rem 2.5rem; border-radius: 18px; font-weight: 700; box-shadow: 0 8px 25px rgba(34, 197, 94, 0.18); font-size: 1.15rem; gap: 1.1rem;">
+            <i class="fas fa-award" style="font-size: 2rem;"></i>
+            <div style="text-align: left;">
+              <div style="font-size: 1.18rem; font-weight: 800; letter-spacing: -0.5px;">Certificado FSC®</div>
+              <div style="font-size: 1rem; opacity: 0.92; font-weight: 500;">Responsabilidade ambiental e social garantida em cada produto Zapack</div>
+            </div>
+            <img src="assets/images/fsc-logo.png" alt="FSC" style="height: 38px; margin-left: 1.2rem; background: #fff; border-radius: 7px; padding: 3px 7px; box-shadow: 0 2px 8px rgba(34,197,94,0.10);">
+          </div>
+          <div style="margin-top: 1.2rem; color: #388e3c; font-size: 1.05rem; font-weight: 600;">
+            Escolha produtos que respeitam o planeta e valorizam sua marca.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta-section container section-mobile-padding" id="contato">
+    <div class="cta-title">Pronto para destacar sua marca com a Zapack?</div>
+    <div class="cta-desc">Solicite seu orçamento grátis e receba atendimento personalizado.<br>Materiais de alta qualidade, entrega rápida e excelência premium para seu negócio!</div>
+    <!-- Formulário RD Station -->
+    <div role="main" id="formulario-lp-adesivos-e-rotulos-zapack-85ad0f606ddb92569982"></div>
+    <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+    <script type="text/javascript"> new RDStationForms('formulario-lp-adesivos-e-rotulos-zapack-85ad0f606ddb92569982', 'UA-26024689-3').createForm();</script>
+    <a href="https://w.app/zapack" target="_blank" class="btn btn-main"><i class="fab fa-whatsapp me-2"></i>Falar no WhatsApp</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img src="assets/images/ZAPACK BRANCO.png" alt="Zapack logo branco" class="footer-logo">
+      <div class="footer-links mb-3">
+        <a href="#produtos">Produtos</a>|
+        <a href="#como-funciona">Como Funciona</a>|
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-social mb-3">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://w.app/zapack" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="footer-contact">contato@zappack.com.br | Belo Horizonte - MG | (31) 9999-9999</div>
+      <div style="font-size:0.95rem;opacity:0.7;">© 2025 Zapack. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+  <!-- WhatsApp Flutuante -->
+  <a href="https://w.app/zapack" class="whatsapp-float" target="_blank" title="Fale com a Zapack no WhatsApp">
+    <i class="fab fa-whatsapp me-2"></i> Orçamento Grátis
+  </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>  <script>
+    // CARROSSEL DE DEPOIMENTOS - VERSÃO CORRIGIDA PARA LOOP INFINITO
+    document.addEventListener('DOMContentLoaded', function() {
+      const testimonialCarousel = document.getElementById('testimonialCarousel');
+      
+      if (testimonialCarousel) {
+        // Detecta se é desktop ou mobile
+        const isDesktop = window.innerWidth > 768;
+        
+        // Configura slides visíveis baseado no tamanho da tela
+        function configureSlidesVisibility() {
+          const allSlides = testimonialCarousel.querySelectorAll('.carousel-item');
+          
+          if (isDesktop) {
+            // Desktop: apenas slides 1 e 2 visíveis
+            allSlides.forEach((slide, index) => {
+              if (index < 2) {
+                slide.classList.remove('d-md-none');
+              } else {
+                slide.classList.add('d-md-none');
+              }
+            });
+          }
+        }
+        
+        // --- CORREÇÃO: Remove slides extras do DOM no desktop ---
+    function removeExtraSlidesDesktop() {
+      if (window.innerWidth > 768) {
+        const carouselInner = testimonialCarousel.querySelector('.carousel-inner');
+        const allSlides = Array.from(carouselInner.querySelectorAll('.carousel-item'));
+        // Remove slides extras (índice >= 2)
+        allSlides.forEach((slide, idx) => {
+          if (idx >= 2) slide.remove();
+        });
+        // Remove indicadores extras (índice >= 2)
+        const indicators = testimonialCarousel.querySelectorAll('.carousel-indicators button.d-none.d-md-block, .carousel-indicators button.d-md-none');
+        indicators.forEach((btn, idx) => {
+          if (btn.classList.contains('d-none') && idx >= 2) btn.remove();
+        });
+      }
+    }
+        // Aplica configuração inicial
+        configureSlidesVisibility();
+        removeExtraSlidesDesktop();
+        
+        // Inicializa carousel
+        const carousel = new bootstrap.Carousel(testimonialCarousel, {
+          interval: 5000,
+          wrap: true, // Loop infinito habilitado
+          touch: true,
+          ride: 'carousel'
+        });
+        
+        // Função para limpar visual
+        function cleanupSlides() {
+          const allItems = testimonialCarousel.querySelectorAll('.carousel-item');
+          const activeItem = testimonialCarousel.querySelector('.carousel-item.active');
+          
+          allItems.forEach(item => {
+            if (item !== activeItem) {
+              item.style.display = 'none';
+              item.style.opacity = '0';
+              item.style.visibility = 'hidden';
+            }
+          });
+          
+          if (activeItem) {
+            activeItem.style.display = 'block';
+            activeItem.style.opacity = '1';
+            activeItem.style.visibility = 'visible';
+          }
+        }
+        
+        // Executa cleanup inicial
+        cleanupSlides();
+        
+        // Eventos de transição
+        testimonialCarousel.addEventListener('slid.bs.carousel', cleanupSlides);
+        
+        // Pausa/retoma no hover (desktop)
+        if (isDesktop) {
+          testimonialCarousel.addEventListener('mouseenter', () => carousel.pause());
+          testimonialCarousel.addEventListener('mouseleave', () => carousel.cycle());
+        }
+        
+        // Touch para mobile
+        let startX = 0;
+        testimonialCarousel.addEventListener('touchstart', (e) => {
+          startX = e.touches[0].clientX;
+          carousel.pause();
+        });
+        
+        testimonialCarousel.addEventListener('touchend', (e) => {
+          const endX = e.changedTouches[0].clientX;
+          const diff = startX - endX;
+          
+          if (Math.abs(diff) > 50) {
+            if (diff > 0) {
+              carousel.next();
+            } else {
+              carousel.prev();
+            }
+          }
+          
+          setTimeout(() => carousel.cycle(), 500);
+        });
+        
+        // Força o loop infinito checando posição
+        testimonialCarousel.addEventListener('slide.bs.carousel', function(e) {
+          // Permite que o Bootstrap gerencie o loop automaticamente
+          cleanupSlides();
+        });
+      }
+    });
+    
+    // Script para reestruturar carrosséis no mobile (manter funcionalidade existente)
+    function setupMobileCarousels() {
+      // Detecta se é mobile
+      if (window.innerWidth <= 768) {
+        const carousels = document.querySelectorAll('.product-carousel');
+        
+        carousels.forEach(carousel => {
+          const carouselInner = carousel.querySelector('.carousel-inner');
+          const originalSlides = Array.from(carousel.querySelectorAll('.carousel-item'));
+          
+          // Coleta todos os produtos de todos os slides
+          const allProducts = [];
+          originalSlides.forEach(slide => {
+            const products = Array.from(slide.querySelectorAll('.col-md-4'));
+            allProducts.push(...products);
+          });
+          
+          // Se há mais de 3 produtos, reorganiza para mobile
+          if (allProducts.length > 3) {
+            // Limpa o carrossel atual
+            carouselInner.innerHTML = '';
+            
+            // Cria um novo slide para cada produto
+            allProducts.forEach((product, index) => {
+              const newSlide = document.createElement('div');
+              newSlide.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+              
+              const row = document.createElement('div');
+              row.className = 'row justify-content-center';
+              
+              // Clona o produto para o novo slide
+              const productClone = product.cloneNode(true);
+              productClone.className = 'col-11'; // Quase full width no mobile
+              
+              row.appendChild(productClone);
+              newSlide.appendChild(row);
+              carouselInner.appendChild(newSlide);
+            });
+            
+            // Atualiza os indicadores se existirem
+            const indicators = carousel.querySelector('.carousel-indicators');
+            if (indicators) {
+              indicators.innerHTML = '';
+              allProducts.forEach((_, index) => {
+                const indicator = document.createElement('button');
+                indicator.type = 'button';
+                indicator.setAttribute('data-bs-target', `#${carousel.id}`);
+                indicator.setAttribute('data-bs-slide-to', index.toString());
+                if (index === 0) indicator.className = 'active';
+                indicators.appendChild(indicator);
+              });
+            }
+          } else {
+            // Para carrosséis com 3 ou menos produtos, apenas ajusta o layout
+            originalSlides.forEach(slide => {
+              const products = slide.querySelectorAll('.col-md-4');
+              products.forEach(product => {
+                product.className = 'col-11 mb-3';
+              });
+            });
+          }
+        });
+      }
+    }
+    
+    // Função para scroll horizontal suave nos carrosséis
+    function enableHorizontalScroll() {
+      if (window.innerWidth <= 768) {
+        const carouselRows = document.querySelectorAll('.product-carousel .carousel-item .row');
+        carouselRows.forEach(row => {
+          // Adiciona scroll horizontal suave
+          row.style.display = 'flex';
+          row.style.flexWrap = 'nowrap';
+          row.style.overflowX = 'auto';
+          row.style.scrollSnapType = 'x mandatory';
+          row.style.webkitOverflowScrolling = 'touch';
+          row.style.paddingBottom = '10px';
+          
+          // Ajusta os cards para scroll horizontal
+          const cards = row.querySelectorAll('.col-md-4, .col-11');
+          cards.forEach((card, index) => {
+            card.style.flex = '0 0 85%';
+            card.style.maxWidth = '85%';
+            card.style.scrollSnapAlign = 'center';
+            card.style.marginRight = index === cards.length - 1 ? '0' : '15px';
+          });
+        });
+      }
+    }
+    
+    // Executa no carregamento da página
+    document.addEventListener('DOMContentLoaded', function() {
+      setupMobileCarousels();
+      enableHorizontalScroll();
+    });
+    
+    // Executa no redimensionamento da janela
+    window.addEventListener('resize', function() {
+      // Debounce para evitar múltiplas execuções
+      clearTimeout(window.resizeTimeout);
+      window.resizeTimeout = setTimeout(() => {
+        const wasMobile = window.innerWidth <= 768;
+        if (wasMobile) {
+          setupMobileCarousels();
+          enableHorizontalScroll();
+        } else {
+          // Recarrega para voltar ao layout desktop
+          location.reload();
+        }
+      }, 250);
+    });
+  </script>  <script>
+  // Testimonials carousel is now active on both desktop and mobile
+  // Desktop: 2 slides with 3 testimonials each, 5-second auto-rotation
+  // Mobile: 6 individual slides with manual navigation
+  </script>
+</body>
+</html>

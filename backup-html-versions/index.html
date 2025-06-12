@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zap Gráfica - Adesivos, Etiquetas e Rótulos Personalizados</title>
+    <meta name="description" content="Adesivos, etiquetas e rótulos personalizados de alta qualidade. Destaque sua marca com produtos gráficos profissionais da Zap Gráfica.">
+    <meta name="keywords" content="adesivos, etiquetas, rótulos, gráfica, personalização, impressão">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Config -->    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'zap-green': '#00d355',
+                        'zap-blue': '#00AEff'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">    <!-- Favicon (adicione seu favicon) -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Zap Gráfica - Adesivos, Etiquetas e Rótulos Personalizados">
+    <meta property="og:description" content="Destaque sua marca com produtos gráficos de alta qualidade, versatilidade e custo-benefício real">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:type" content="website">
+</head>
+<body class="bg-gray-50">
+    <!-- Preloader -->
+    <div class="preloader fixed inset-0 bg-white z-50 flex items-center justify-center">
+        <div class="text-center">
+            <div class="w-16 h-16 border-4 border-zap-green border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <div class="text-zap-green font-semibold">Carregando...</div>
+        </div>
+    </div>    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <!-- Logo - Substitua pelo caminho real da sua logo -->
+                    <img src="assets/images/logo-zap.png" alt="Zap Gráfica Logo" class="h-10 w-auto" style="display: none;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="text-2xl font-bold text-gray-800 flex items-center">
+                        <i class="fas fa-bolt text-brand mr-2"></i>
+                        <span class="text-brand">Zap Gráfica</span>
+                    </div>
+                </div>
+                <a href="#contato" class="btn-cta px-6 py-3 rounded-full font-semibold">
+                    <i class="fas fa-comments mr-2"></i>
+                    Falar com a Zap
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Adesivos, Etiquetas e Rótulos<br>
+                <span class="text-yellow-200">Personalizados</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+                Destaque sua marca em cada detalhe com produtos gráficos de alta qualidade, versatilidade e custo-benefício real
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#produtos" class="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300">
+                    <i class="fas fa-eye mr-2 text-brand"></i>
+                    Ver Produtos
+                </a>
+                <a href="#contato" class="btn-cta px-8 py-4 rounded-full font-semibold text-lg">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Falar com Especialista
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="py-16 section-gradient-1">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    Por que escolher a <span class="text-gradient">Zap Gráfica</span>?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Soluções completas em produtos gráficos para quem busca qualidade, variedade e custo-benefício real
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-6">                        <div class="flex items-start space-x-4 card-hover p-6 bg-white rounded-xl border-l-4 border-zap-green">
+                            <div class="bg-gradient-to-br from-zap-green to-zap-blue p-3 rounded-full">
+                                <i class="fas fa-award text-white text-xl icon-animated"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Qualidade Impecável</h3>
+                                <p class="text-gray-600">Impressão de alta qualidade com materiais resistentes e duráveis</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4 card-hover p-6 bg-white rounded-xl border-l-4 border-zap-blue">
+                            <div class="bg-gradient-to-br from-zap-blue to-zap-green p-3 rounded-full">
+                                <i class="fas fa-palette text-white text-xl icon-animated"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Versatilidade Total</h3>
+                                <p class="text-gray-600">Produtos ideais para comércio, alimentos, eventos, logística e personalização</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4 card-hover p-6 bg-white rounded-xl border-l-4 border-zap-green">
+                            <div class="bg-gradient-to-br from-zap-green to-zap-blue p-3 rounded-full">
+                                <i class="fas fa-dollar-sign text-white text-xl icon-animated"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Margem Real para Revenda</h3>
+                                <p class="text-gray-600">Opções ideais para revendedores com custo-benefício real</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="highlight-box">
+                        <i class="fas fa-rocket text-6xl mb-4 floating"></i>
+                        <h3 class="text-2xl font-bold mb-4">Solução Completa</h3>
+                        <p class="text-lg opacity-90">
+                            Desde adesivos de segurança até rótulos para congelados, temos a solução ideal para o seu negócio
+                        </p>
+                        <div class="mt-6">
+                            <div class="inline-flex items-center space-x-4 text-sm opacity-80">
+                                <span><i class="fas fa-check mr-1"></i> +1000 produtos</span>
+                                <span><i class="fas fa-check mr-1"></i> Entrega nacional</span>
+                                <span><i class="fas fa-check mr-1"></i> Suporte 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- Produtos Section -->
+    <section id="produtos" class="py-16 section-gradient-2">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    Nossos <span class="text-gradient">Produtos</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Linha completa de adesivos, etiquetas e rótulos para todas as necessidades
+                </p>
+                <div class="w-24 h-1 bg-gradient-to-r from-zap-green to-zap-blue mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Adesivo Casca de Ovo -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border border-gray-100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-shield-alt text-4xl text-zap-blue mb-3 icon-animated"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Adesivo Casca de Ovo</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Ideal para lacrar produtos e embalagens com segurança. Dificulta a remoção e protege contra violações.
+                    </p>                    <a href="#" class="block w-full text-center btn-primary py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                        Saiba mais no site!
+                    </a>
+                </div>
+
+                <!-- Adesivo de Piso -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border border-gray-100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-map-marker-alt text-4xl text-zap-green mb-3 icon-animated"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Adesivo de Piso</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Impressos em vinil branco com alta qualidade, ideais para sinalização em ambientes internos e eventos.
+                    </p>
+                    <a href="#" class="block w-full text-center btn-secondary py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                        Saiba mais no site!
+                    </a>
+                </div>
+
+                <!-- Adesivo DTF Têxtil -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border border-gray-100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-tshirt text-4xl text-zap-blue mb-3 icon-animated"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Adesivo DTF Têxtil</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Ideal para personalizar roupas e acessórios com cores vibrantes e alta durabilidade.
+                    </p>
+                    <a href="#" class="block w-full text-center btn-primary py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                        Saiba mais no site!
+                    </a>
+                </div>
+
+                <!-- Adesivo DTF UV -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border border-gray-100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-sun text-4xl text-zap-green mb-3 icon-animated"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Adesivo DTF UV</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Perfeito para divulgar marcas com alta definição. Aplicável em diversas superfícies com ótima resistência.
+                    </p>
+                    <a href="#" class="block w-full text-center btn-secondary py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                        Saiba mais no site!
+                    </a>
+                </div>
+
+                <!-- Adesivo Resinado -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border border-gray-100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-cube text-4xl text-zap-blue mb-3 icon-animated"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Adesivo Resinado</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Ideal para etiquetas com efeito 3D e personalização de tanques de moto com acabamento profissional.
+                    </p>
+                    <a href="#" class="block w-full text-center btn-primary py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                        Saiba mais no site!
+                    </a>
+                </div>
+
+                <!-- Adesivo Termocolante -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border border-gray-100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-fire text-4xl text-zap-green mb-3 icon-animated"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Adesivo Termocolante</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Perfeito para personalizar roupas e uniformes. Aplicado com calor, garante fixação resistente.
+                    </p>
+                    <a href="#" class="block w-full text-center btn-secondary py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                        Saiba mais no site!
+                    </a>
+                </div>
+
+                <!-- Etiquetas Corte Especial -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border border-gray-100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-star text-4xl text-zap-blue mb-3 icon-animated"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Etiquetas Corte Especial</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Formatos diferenciados e recorte criativo, ideais para valorizar embalagens e produtos.
+                    </p>
+                    <a href="#" class="block w-full text-center btn-primary py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                        Saiba mais no site!
+                    </a>
+                </div>
+
+                <!-- Etiquetas Padrão -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border border-gray-100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-tag text-4xl text-zap-green mb-3 icon-animated"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Etiquetas Padrão</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Soluções versáteis para identificação e organização. Perfeitas para uso logístico e comercial.
+                    </p>
+                    <a href="#" class="block w-full text-center btn-secondary py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                        Saiba mais no site!
+                    </a>
+                </div>
+
+                <!-- Rótulos para Frios -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border border-gray-100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-snowflake text-4xl text-zap-blue mb-3 icon-animated"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Rótulo para Frios e Congelados</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Ideal para alimentos refrigerados. Resistente à umidade e baixas temperaturas.
+                    </p>
+                    <a href="#" class="block w-full text-center btn-primary py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                        Saiba mais no site!
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="gradient-cta text-white px-8 py-4 rounded-full font-semibold text-lg inline-block transition-all duration-300">
+                    <i class="fas fa-list mr-2"></i>
+                    Ver Todos os Produtos
+                </a>
+            </div>
+        </div>
+    </section>    <!-- Serviço Arte Online -->
+    <section class="py-16 section-gradient-1 relative overflow-hidden">
+        <!-- Elementos decorativos de fundo -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-zap-purple bg-opacity-5 rounded-full -translate-x-32 -translate-y-32"></div>
+        <div class="absolute bottom-0 right-0 w-48 h-48 bg-zap-pink bg-opacity-5 rounded-full translate-x-24 translate-y-24"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">                <div class="mb-8">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-zap-green to-zap-blue rounded-full mb-6 floating">
+                        <i class="fas fa-paint-brush text-white text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                        Serviço de <span class="text-gradient">Arte Online</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        <strong>Você vende, a gente cria!</strong> Não se preocupe com o desenvolvimento das artes - nós cuidamos de tudo!
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">                    <div class="bg-white p-6 rounded-xl shadow-md card-hover border-l-4 border-zap-blue">
+                        <i class="fas fa-globe text-zap-blue text-3xl mb-3 icon-animated"></i>
+                        <h3 class="font-semibold text-gray-800 mb-2">Atendimento Online</h3>
+                        <p class="text-gray-600 text-sm">Ser atendido de qualquer lugar via Google Meet com total comodidade</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md card-hover border-l-4 border-zap-green">
+                        <i class="fas fa-users text-zap-green text-3xl mb-3 icon-animated"></i>
+                        <h3 class="font-semibold text-gray-800 mb-2">Equipe Especializada</h3>
+                        <p class="text-gray-600 text-sm">Materiais criados e ajustados por nossa equipe profissional</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md card-hover border-l-4 border-zap-blue">
+                        <i class="fas fa-check-circle text-zap-blue text-3xl mb-3 icon-animated"></i>
+                        <h3 class="font-semibold text-gray-800 mb-2">Zero Erros</h3>
+                        <p class="text-gray-600 text-sm">Garantimos materiais 100% alinhados sem erros de impressão</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">💰 Vantagens Econômicas</h3>
+                    <div class="grid md:grid-cols-2 gap-6 text-left">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-zap-green rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Corte de custos com contratação</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-zap-green rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Sem investimento em software</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-zap-green rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Economia de tempo e recursos</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-zap-green rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Resultados profissionais garantidos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#contato" class="gradient-cta text-white px-8 py-4 rounded-full font-semibold text-lg inline-block transition-all duration-300">
+                    <i class="fas fa-brush mr-2"></i>
+                    Contratar Arte Online
+                </a>
+            </div>
+        </div>
+    </section>    <!-- Formas de Entrega -->
+    <section class="py-16 section-gradient-2">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-shipping-fast text-zap-green mr-3"></i>
+                    Entregamos em <span class="text-gradient">Qualquer Lugar</span>
+                </h2>
+                <p class="text-xl text-gray-600 mb-6">
+                    Não importa onde ou quando você deseja receber, a Zap entrega!
+                </p>
+                <div class="w-24 h-1 bg-gradient-to-r from-zap-green to-zap-blue mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover group border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-zap-green to-zap-blue rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-store text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Base de Retirada</h3>
+                    <p class="text-gray-600 mb-4">
+                        Rapidez total. Faça o pedido e retire diretamente em nossas bases.
+                    </p>
+                    <div class="inline-flex items-center text-zap-green font-semibold">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Imediato</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover group border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-zap-green to-zap-purple rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-building text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Balcão BH</h3>
+                    <p class="text-gray-600 mb-4">
+                        Nossa loja em BH com fácil acesso, rapidez e flexibilidade.
+                    </p>
+                    <div class="inline-flex items-center text-zap-purple font-semibold">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Belo Horizonte</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover group border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-zap-green to-yellow-500 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-box text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Sedex</h3>
+                    <p class="text-gray-600 mb-4">
+                        Entrega rápida e segura para todo o Brasil via Correios.
+                    </p>
+                    <div class="inline-flex items-center text-yellow-600 font-semibold">
+                        <i class="fas fa-truck mr-2"></i>
+                        <span>Todo Brasil</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover group border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-zap-green to-zap-pink rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-motorcycle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Motoboy</h3>
+                    <p class="text-gray-600 mb-4">
+                        Entrega no mesmo dia para pedidos urgentes e locais.
+                    </p>
+                    <div class="inline-flex items-center text-zap-pink font-semibold">
+                        <i class="fas fa-bolt mr-2"></i>
+                        <span>Mesmo dia</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção de cobertura -->
+            <div class="mt-12 text-center">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">📍 Cobertura Nacional</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-zap-green mb-2">+5000</div>
+                            <div class="text-gray-600">Cidades Atendidas</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-zap-purple mb-2">24h</div>
+                            <div class="text-gray-600">Prazo Médio Entrega</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-zap-pink mb-2">100%</div>
+                            <div class="text-gray-600">Segurança Garantida</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- CTA Final -->
+    <section id="contato" class="gradient-hero text-white py-20 relative overflow-hidden">
+        <!-- Efeitos visuais de fundo -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white bg-opacity-5 rounded-full -translate-x-48 -translate-y-48 floating"></div>
+            <div class="absolute bottom-0 right-0 w-80 h-80 bg-white bg-opacity-5 rounded-full translate-x-40 translate-y-40 floating-delayed"></div>
+            <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-white bg-opacity-5 rounded-full -translate-x-32 -translate-y-32 floating"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="floating">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    Pronto para <span class="text-yellow-300">Elevar Suas Vendas</span>?
+                </h2>
+            </div>
+            <div class="floating-delayed">
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+                    Não perca a oportunidade de destacar sua marca com produtos gráficos de alta qualidade da Zap Gráfica
+                </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="#" class="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 inline-flex items-center justify-center hover:scale-105">
+                    <i class="fas fa-globe mr-2 text-zap-green"></i>
+                    Acessar o Site
+                </a>                <a href="#" class="bg-gradient-to-r from-zap-green to-zap-blue hover:from-zap-blue hover:to-zap-green px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center hover:scale-105 whatsapp-float">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    QUERO FALAR COM A ZAP!
+                </a>
+            </div>
+            
+            <!-- Seção de garantias -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-8">
+                <div class="flex flex-col items-center space-y-3 bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center">
+                        <i class="fas fa-award text-gray-800 text-2xl"></i>
+                    </div>
+                    <span class="text-lg font-semibold">Qualidade Garantida</span>
+                    <span class="text-sm opacity-90 text-center">Produtos com certificação de qualidade</span>
+                </div>
+                <div class="flex flex-col items-center space-y-3 bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center">
+                        <i class="fas fa-clock text-gray-800 text-2xl"></i>
+                    </div>
+                    <span class="text-lg font-semibold">Entrega Rápida</span>
+                    <span class="text-sm opacity-90 text-center">Prazos que cabem na sua urgência</span>
+                </div>
+                <div class="flex flex-col items-center space-y-3 bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center">
+                        <i class="fas fa-handshake text-gray-800 text-2xl"></i>
+                    </div>
+                    <span class="text-lg font-semibold">Atendimento Especializado</span>
+                    <span class="text-sm opacity-90 text-center">Equipe pronta para te ajudar</span>
+                </div>
+            </div>
+
+            <!-- Call to action extra -->
+            <div class="bg-white bg-opacity-10 p-8 rounded-2xl backdrop-blur-sm max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold mb-4">🚀 Oferta Especial para Novos Clientes</h3>
+                <p class="text-lg mb-6 opacity-90">
+                    Entre em contato agora e ganhe desconto especial no seu primeiro pedido + consultoria gratuita!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#" class="bg-yellow-300 text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-all duration-300 inline-flex items-center justify-center">
+                        <i class="fas fa-phone mr-2"></i>
+                        Ligar Agora
+                    </a>
+                    <a href="#" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-800 transition-all duration-300 inline-flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Enviar E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 relative overflow-hidden">
+        <!-- Elemento decorativo de fundo -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-zap-green via-zap-purple to-zap-pink"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Logo e descrição -->
+                <div class="md:col-span-2">
+                    <div class="logo-container mb-4">
+                        <img src="assets/images/logo-zap-white.png" alt="Zap Gráfica Logo" class="logo-img" style="display: none;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="text-2xl font-bold flex items-center">
+                            <i class="fas fa-bolt text-zap-green mr-2"></i>
+                            <span class="text-gradient">Zap Gráfica</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Especialistas em adesivos, etiquetas e rótulos personalizados de alta qualidade. Sua marca em destaque com produtos que fazem a diferença.
+                    </p>
+                    <div class="flex space-x-4">                        <a href="#" class="w-10 h-10 bg-gradient-to-br from-zap-green to-zap-blue rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-facebook text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gradient-to-br from-zap-blue to-zap-green rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-instagram text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gradient-to-br from-zap-green to-zap-blue rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gradient-to-br from-zap-blue to-zap-green rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-linkedin text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links rápidos -->
+                <div>                    <h3 class="text-lg font-semibold mb-4 text-zap-green">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#produtos" class="text-gray-400 hover:text-zap-green transition-colors">Nossos Produtos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-zap-green transition-colors">Sobre Nós</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-zap-green transition-colors">Arte Online</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-zap-green transition-colors">Formas de Entrega</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-zap-green transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contato -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-zap-blue">Contato</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-zap-green"></i>
+                            <span class="text-gray-400">(31) 9999-9999</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-zap-blue"></i>
+                            <span class="text-gray-400">contato@zapgrafica.com.br</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-zap-green"></i>
+                            <span class="text-gray-400">Belo Horizonte - MG</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-zap-blue"></i>
+                            <span class="text-gray-400">Seg-Sex: 8h às 18h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Linha divisória -->
+            <div class="border-t border-gray-800 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2024 Zap Gráfica. Todos os direitos reservados.
+                    </div>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-zap-green transition-colors">Política de Privacidade</a>
+                        <a href="#" class="text-gray-400 hover:text-zap-green transition-colors">Termos de Uso</a>
+                        <a href="#" class="text-gray-400 hover:text-zap-green transition-colors">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="#" class="fixed bottom-6 right-6 whatsapp-float text-white p-4 rounded-full shadow-lg transition-all hover:scale-110 z-50 group">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="absolute right-16 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Fale conosco!
+        </span>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
