@@ -60,7 +60,7 @@ Página única (SPA estática) para apresentação comercial da Zapack. Implemen
 
 ## Links
 
-- 🔗 Site (Netlify): https://<seu-subdominio>.netlify.app  (substituir após publicação)
+- 🔗 Site (Netlify): https://zapack.netlify.app
 - 💻 Repositório: https://github.com/svlucas7/lp-adesivos-rotulos
 
 ## Objetivo no portfólio
