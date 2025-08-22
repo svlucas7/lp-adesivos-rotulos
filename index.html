@@ -2341,24 +2341,56 @@
         try {
           var container = document.getElementById('formulario-lp-adesivos-e-rotulos-zapack-85ad0f606ddb92569982');
           if(!container) return;
+          var fired = false; // garante 1 único push
+          function fireLead(){
+            if(fired) return; fired = true;
+            window.dataLayer.push({
+              event: 'generate_lead',
+              lead_source: 'rdstation',
+              form_id: 'lp-adesivos-rotulos',
+              form_name: 'Orcamento Zapack'
+            });
+          }
           // MutationObserver para detectar mensagem de sucesso
           var observer = new MutationObserver(function(mutations){
             mutations.forEach(function(m){
               if(m.addedNodes){
                 m.addedNodes.forEach(function(n){
-                  if(n.nodeType === 1 && /sucesso|obrigado|thank/i.test(n.textContent)){
-                    window.dataLayer.push({
-                      event: 'generate_lead',
-                      lead_source: 'rdstation',
-                      form_id: 'lp-adesivos-rotulos',
-                      form_name: 'Orcamento Zapack'
-                    });
-                  }
+                  if(n.nodeType === 1 && /sucesso|obrigado|thank|enviado|enviad[ao]/i.test(n.textContent)){ fireLead(); }
                 });
               }
             });
           });
           observer.observe(container, {childList:true, subtree:true});
+
+          // Escuta de eventos globais que alguns embeds do RD disparam
+          ['rdStationFormSubmit','rdforms:success','rdstation:conversion','rdstation_form_submitted'].forEach(function(evt){
+            window.addEventListener(evt, fireLead, true);
+          });
+
+          // Fallback: intercepta submissão do form interno se acessível
+          setTimeout(function(){
+            var innerForm = container.querySelector('form');
+            if(innerForm){
+              innerForm.addEventListener('submit', function(){
+                // dispara após pequeno delay para permitir mensagem aparecer
+                setTimeout(function(){
+                  // se mutation não pegou, checa inputs típicos de sucesso
+                  if(!fired){
+                    var successEl = container.querySelector('.success, .rdstation-form-success, [data-success], .alert-success');
+                    if(successEl || /obrigado|sucesso/i.test(container.textContent)) { fireLead(); }
+                  }
+                }, 1500);
+              });
+            }
+          }, 1500);
+
+          // Polling leve (último recurso) por até 10s
+            var attempts = 0; var maxAttempts = 20; // 20 * 500ms = 10s
+            var poll = setInterval(function(){
+              if(fired || attempts++ >= maxAttempts){ clearInterval(poll); return; }
+              if(/obrigado|sucesso|thank/i.test(container.textContent)){ fireLead(); clearInterval(poll); }
+            }, 500);
         } catch(e) { /* silencioso */ }
       }
       document.addEventListener('DOMContentLoaded', setupRDObserver);
