@@ -6,7 +6,7 @@
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NC6X28N');</script>
+  })(window,document,'script','dataLayer','GTM-KPB77NRD');</script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1497,37 +1497,14 @@
         padding: 0.3rem 0.6rem;
       }
     }
-
-    <!-- Facebook Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '487696269435926');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=487696269435926&ev=PageView&noscript=1"/></noscript>
-    <!-- End Facebook Pixel Code -->
-
-    <!-- Google Analytics GA4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2V46X0HB2M"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-2V46X0HB2M');
-    </script>
   </style>
+  <!-- Facebook Pixel removido: mantidos apenas GTM e GA4 -->
+  <!-- GA4 agora será disparado apenas via GTM (container GTM-KPB77NRD). Snippet gtag.js removido para evitar duplicidade. -->
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC6X28N"
+  <!-- Container dedicado LP (substituído em 2025-08-22) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPB77NRD"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <!-- Navbar -->
@@ -1545,7 +1522,7 @@
           <li class="nav-item"><a class="nav-link" href="#como-funciona">Como Funciona</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
-        <a href="https://wa.me/5531987443801" target="_blank" class="btn btn-main ms-lg-3">Fale com a Zapack</a>
+  <a href="https://wa.me/5531987443801" target="_blank" id="btn-whatsapp-nav" class="btn btn-main ms-lg-3 js-whatsapp" data-pos="nav">Fale com a Zapack</a>
       </div>
     </div>
   </nav>
@@ -2087,7 +2064,7 @@
     <div role="main" id="formulario-lp-adesivos-e-rotulos-zapack-85ad0f606ddb92569982"></div>
     <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
     <script type="text/javascript"> new RDStationForms('formulario-lp-adesivos-e-rotulos-zapack-85ad0f606ddb92569982', 'UA-26024689-3').createForm();</script>
-    <a href="https://wa.me/5531987443801" target="_blank" class="btn btn-main"><i class="fab fa-whatsapp me-2"></i>Falar no WhatsApp</a>
+  <a href="https://wa.me/5531987443801" target="_blank" id="btn-whatsapp-cta-final" class="btn btn-main js-whatsapp" data-pos="cta-final"><i class="fab fa-whatsapp me-2"></i>Falar no WhatsApp</a>
   </section>
 
   <!-- Footer -->
@@ -2101,14 +2078,14 @@
       </div>
       <div class="footer-social mb-3">
         <a href="https://instagram.com/zapack_embalagens" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/5531987443801" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://wa.me/5531987443801" target="_blank" id="btn-whatsapp-footer" class="js-whatsapp" data-pos="footer-social"><i class="fab fa-whatsapp"></i></a>
       </div>
       <div class="footer-contact">contato@zapack.com.br | Contagem - MG | (31) 2566-6530</div>
       <div style="font-size:0.95rem;opacity:0.7;">© 2025 Zapack. Todos os direitos reservados.</div>
     </div>
   </footer>
   <!-- WhatsApp Flutuante -->
-  <a href="https://wa.me/5531987443801" class="whatsapp-float" target="_blank" title="Fale com a Zapack no WhatsApp">
+  <a href="https://wa.me/5531987443801" class="whatsapp-float js-whatsapp" id="btn-whatsapp-floating" data-pos="floating" target="_blank" title="Fale com a Zapack no WhatsApp">
     <i class="fab fa-whatsapp me-2"></i> Orçamento Grátis
   </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>  <script>
@@ -2341,6 +2318,51 @@
   // Testimonials carousel is now active on both desktop and mobile
   // Desktop: 2 slides with 3 testimonials each, 5-second auto-rotation
   // Mobile: 6 individual slides with manual navigation
+  </script>
+  <script>
+    // Tracking WhatsApp clicks -> GA4 via GTM (event: contact)
+    (function(){
+      window.dataLayer = window.dataLayer || [];
+      function trackWhatsAppClick(e){
+        var el = e.currentTarget;
+        window.dataLayer.push({
+          event: 'contact',
+          contact_channel: 'whatsapp',
+          contact_position: el.getAttribute('data-pos') || 'unknown',
+          link_url: el.href
+        });
+      }
+      document.querySelectorAll('.js-whatsapp').forEach(function(btn){
+        btn.addEventListener('click', trackWhatsAppClick);
+      });
+      // RD Station form lead (generate_lead)
+      // RDStationForms dispara custom events quando o form é criado / enviado; fallback simples de polling do input hidden _rdstationFormSubmitted
+      function setupRDObserver(){
+        try {
+          var container = document.getElementById('formulario-lp-adesivos-e-rotulos-zapack-85ad0f606ddb92569982');
+          if(!container) return;
+          // MutationObserver para detectar mensagem de sucesso
+          var observer = new MutationObserver(function(mutations){
+            mutations.forEach(function(m){
+              if(m.addedNodes){
+                m.addedNodes.forEach(function(n){
+                  if(n.nodeType === 1 && /sucesso|obrigado|thank/i.test(n.textContent)){
+                    window.dataLayer.push({
+                      event: 'generate_lead',
+                      lead_source: 'rdstation',
+                      form_id: 'lp-adesivos-rotulos',
+                      form_name: 'Orcamento Zapack'
+                    });
+                  }
+                });
+              }
+            });
+          });
+          observer.observe(container, {childList:true, subtree:true});
+        } catch(e) { /* silencioso */ }
+      }
+      document.addEventListener('DOMContentLoaded', setupRDObserver);
+    })();
   </script>
 </body>
 </html>
